@@ -1,5 +1,14 @@
 [
   {
+    "title": "Claude di Anthropic scopre vulnerabilità in AES e nel candidato post‑quantum HAWK: l’AI entra nella cripto‑analisi",
+    "date": "2026-07-29T14:43:40.704592",
+    "slug": "anthropic-claude-cryptanalysis-aes-hawk",
+    "topic_id": "10",
+    "summary": "",
+    "file_path": "archivio\\2026\\07\\2026-07-29-anthropic-claude-cryptanalysis-aes-hawk.md",
+    "relative_path": "2026/07/2026-07-29-anthropic-claude-cryptanalysis-aes-hawk.html"
+  },
+  {
     "title": "Tabular Foundation Models: la svolta dell'AI per le imprese",
     "date": "2026-07-29T14:30:15.110301",
     "slug": "tabular-foundation-models-svolta-ai-impresa",
