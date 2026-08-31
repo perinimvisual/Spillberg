@@ -1,6 +1,6 @@
 ---
 title: "Robot autonomi nella vita quotidiana: opportunità, rischi e la sfida della convivenza"
-date: 2026-08-31T19:00:09.383913
+date: 2026-08-31T19:00:26.376573
 slug: robot-autonomi-vita-quotidiana-opportunita-rischi
 topic_id: 29
 ---
