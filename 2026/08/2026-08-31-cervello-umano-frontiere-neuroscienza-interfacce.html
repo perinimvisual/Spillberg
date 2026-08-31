@@ -32,6 +32,12 @@ h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height
 .update-link a { color: var(--accent); text-decoration: none; font-weight: 600; }
 .update-link a:hover { text-decoration: underline; }
 .body { font-size: 1.06rem; }
+.body p, .body li {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
 .body p { margin-bottom: 1.2rem; max-width: 68ch; }
 .body > p:first-of-type::first-letter {
   font-family: var(--serif);
@@ -57,7 +63,7 @@ h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height
   margin: 2.5rem 0;
   text-align: center;
 }
-.body blockquote p { max-width: none; margin: 0; }
+.body blockquote p { max-width: none; margin: 0; text-align: center; hyphens: none; }
 .body a { color: var(--accent); }
 .body ul, .body ol { margin: 0 0 1.2rem 1.5rem; }
 .body hr { border: none; text-align: center; margin: 2.5rem 0; }
