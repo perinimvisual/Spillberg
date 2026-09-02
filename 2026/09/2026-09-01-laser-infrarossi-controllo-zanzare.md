@@ -2,6 +2,7 @@
 title: "Laser a infrarossi contro le zanzare: la nuova frontiera della lotta anti‑insetti"
 date: 2026-09-01T19:03:36.734893
 slug: laser-infrarossi-controllo-zanzare
+category: "Tecnologia"
 topic_id: 30
 ---
 
