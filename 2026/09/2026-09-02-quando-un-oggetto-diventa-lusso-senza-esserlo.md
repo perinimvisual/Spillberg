@@ -2,6 +2,7 @@
 title: "Quando un oggetto si veste di lusso senza esserlo davvero"
 date: 2026-09-02T09:43:23.263405
 slug: quando-un-oggetto-diventa-lusso-senza-esserlo
+category: "Cultura"
 topic_id: 35
 ---
 
