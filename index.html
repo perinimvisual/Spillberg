@@ -47,31 +47,36 @@ a { color: inherit; }
            letter-spacing: -0.035em; font-weight: 700; margin-bottom: 0.2rem; }
 .periodo { font-family: var(--serif); font-style: italic; font-size: 1.25rem;
            color: var(--muted); margin-bottom: 1.8rem; }
-.coverlines { display: grid; gap: 0.9rem; max-width: 42ch; }
-.coverline { display: flex; gap: 0.8rem; align-items: baseline; }
-.coverline .r { font-size: 0.64rem; letter-spacing: 0.1em; text-transform: uppercase;
-                color: var(--accent); font-weight: 700; flex: none; width: 6.2rem; padding-top: 0.35rem; }
-.coverline .h { font-family: var(--serif); font-size: 1.18rem; line-height: 1.25; font-weight: 600; }
-.coverline a { text-decoration: none; }
-.coverline a:hover { color: var(--accent); }
+/* di cosa è fatto il numero: le rubriche, non i titoli (quelli stanno nel sommario) */
+.dentro { display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; max-width: 46rem; }
+.dentro a { font-size: 0.74rem; letter-spacing: 0.09em; text-transform: uppercase;
+            font-weight: 600; color: var(--accent); text-decoration: none;
+            border-bottom: 1px solid transparent; padding-bottom: 1px; }
+.dentro a:hover { border-bottom-color: var(--accent); }
+.dentro a .q { color: var(--faint); font-weight: 500; margin-left: 0.25rem;
+               font-variant-numeric: tabular-nums; }
 
 /* sommario */
 .sommario { padding: 2rem 0 2.4rem; }
 .sez-lab { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase;
            color: var(--faint); margin-bottom: 1.2rem; display: flex; align-items: baseline; gap: 0.7rem; }
 .sez-lab::after { content: ""; flex: 1; border-top: 1px solid var(--rule); }
-.rubrica { margin-bottom: 1.5rem; }
+.rubrica { margin-bottom: 2rem; scroll-margin-top: 1.5rem; }
 .rubrica h2 { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
-              color: var(--accent); font-weight: 700; margin-bottom: 0.5rem;
+              color: var(--accent); font-weight: 700; margin-bottom: 0.7rem;
               padding-bottom: 0.3rem; border-bottom: 1px solid #f0e4e4; }
-.pezzo { display: flex; gap: 0.8rem; align-items: baseline; padding: 0.35rem 0; }
-.pezzo .d { font-size: 0.7rem; color: var(--faint); flex: none; width: 3.4rem;
-            font-variant-numeric: tabular-nums; padding-top: 0.25rem; }
-.pezzo .t { font-family: var(--serif); font-size: 1.05rem; line-height: 1.35; }
+.pezzo { display: flex; gap: 1rem; align-items: baseline; padding: 0.55rem 0; }
+.pezzo + .pezzo { border-top: 1px solid #efece4; }
+.pezzo .d { font-size: 0.7rem; color: var(--faint); flex: none; width: 3.2rem;
+            font-variant-numeric: tabular-nums; padding-top: 0.4rem;
+            text-transform: uppercase; letter-spacing: 0.04em; }
+.pezzo .t { font-family: var(--serif); font-size: 1.22rem; line-height: 1.3;
+            font-weight: 600; text-wrap: balance; }
 .pezzo .t a { text-decoration: none; }
-.pezzo .t a:hover { color: var(--accent); text-decoration: underline; }
-.pezzo .s { display: block; font-family: var(--sans); font-size: 0.82rem;
-            color: var(--muted); line-height: 1.5; margin-top: 0.15rem; }
+.pezzo .t a:hover { color: var(--accent); }
+.pezzo .s { display: block; font-family: var(--sans); font-size: 0.85rem;
+            font-weight: 400; color: var(--muted); line-height: 1.55; margin-top: 0.3rem;
+            max-width: 62ch; }
 
 /* scaffale */
 .scaffale { border-top: 3px double var(--rule); padding: 1.8rem 0 3rem; }
@@ -119,27 +124,17 @@ a { color: inherit; }
     </div>
     <div class="testata">Pubblicio</div>
     <div class="periodo">Settembre 2026</div>
-    <div class="coverlines">
+    <div class="dentro">
       
-      <div class="coverline">
-        <span class="r">Economia</span>
-        <span class="h"><a href="./2026/09/2026-09-02-contingentamento-vendite-rolex-sostenibilita.html">Il meccanismo di contingentamento delle vendite di Rolex: sostenibilità a lungo termine</a></span>
-      </div>
+      <a href="#r-1">Economia<span class="q">3</span></a>
       
-      <div class="coverline">
-        <span class="r">Società</span>
-        <span class="h"><a href="./2026/09/2026-09-02-galateo-contemporaneo-regole-invisibili.html">Galateo contemporaneo: le regole invisibili della vita quotidiana</a></span>
-      </div>
+      <a href="#r-2">Cultura<span class="q">2</span></a>
       
-      <div class="coverline">
-        <span class="r">Cultura</span>
-        <span class="h"><a href="./2026/09/2026-09-02-quando-un-oggetto-diventa-lusso-senza-esserlo.html">Quando un oggetto si veste di lusso senza esserlo davvero</a></span>
-      </div>
+      <a href="#r-3">Società<span class="q">2</span></a>
       
-      <div class="coverline">
-        <span class="r">Previdenza</span>
-        <span class="h"><a href="./2026/09/2026-09-01-riforme-cassa-forense-2025.html">Cassa Forense, la riforma che cambia le regole del gioco per gli avvocati</a></span>
-      </div>
+      <a href="#r-4">Previdenza<span class="q">1</span></a>
+      
+      <a href="#r-5">Tecnologia<span class="q">1</span></a>
       
     </div>
   </section>
@@ -147,14 +142,14 @@ a { color: inherit; }
   <section class="sommario">
     <div class="sez-lab">Sommario</div>
     
-    <div class="rubrica">
+    <div class="rubrica" id="r-1">
       <h2>Economia</h2>
       
       <div class="pezzo">
         <span class="d">2 set</span>
         <span class="t">
           <a href="./2026/09/2026-09-02-contingentamento-vendite-rolex-sostenibilita.html">Il meccanismo di contingentamento delle vendite di Rolex: sostenibilità a lungo termine</a>
-          <span class="s">Nel mondo dell’orologeria di alta gamma, pochi marchi riescono a generare l’aura di esclusività che caratterizza Rolex. Una delle leve principali è il **contingentamento volontario della produzione**,...</span>
+          <span class="s">Nel mondo dell’orologeria di alta gamma, pochi marchi riescono a generare l’aura di esclusività che caratterizza Rolex. Una delle leve principali è il contingentamento volontario della produzione…</span>
         </span>
       </div>
       
@@ -162,7 +157,7 @@ a { color: inherit; }
         <span class="d">2 set</span>
         <span class="t">
           <a href="./2026/09/2026-09-02-illusione-spazio-negozi-vuoti.html">Il trucco dell’illusione di spazio: perché i negozi sembrano vuoti anche quando non lo sono</a>
-          <span class="s">Passeggiando per una via commerciale è facile incappare in quel paradosso: il negozio è pieno di scaffali, manichini e cartelloni, eppure la sensazione è quella di un ambiente spoglio, quasi desolato....</span>
+          <span class="s">Passeggiando per una via commerciale è facile incappare in quel paradosso: il negozio è pieno di scaffali, manichini e cartelloni, eppure la sensazione è quella di un ambiente spoglio, quasi…</span>
         </span>
       </div>
       
@@ -170,20 +165,20 @@ a { color: inherit; }
         <span class="d">1 set</span>
         <span class="t">
           <a href="./2026/09/2026-09-01-mercato-invisibile-recensioni-online.html">Il mercato invisibile delle recensioni online: come poche stelle cambiano le scelte dei consumatori</a>
-          <span class="s">Nel panorama digitale di oggi la decisione d’acquisto non avviene più in solitudine. Prima di aggiungere un prodotto al carrello, di prenotare una stanza o di ordinare una cena, l’utente sfoglia una s...</span>
+          <span class="s">Nel panorama digitale di oggi la decisione d’acquisto non avviene più in solitudine. Prima di aggiungere un prodotto al carrello, di prenotare una stanza o di ordinare una cena, l’utente sfoglia una…</span>
         </span>
       </div>
       
     </div>
     
-    <div class="rubrica">
+    <div class="rubrica" id="r-2">
       <h2>Cultura</h2>
       
       <div class="pezzo">
         <span class="d">2 set</span>
         <span class="t">
           <a href="./2026/09/2026-09-02-quando-un-oggetto-diventa-lusso-senza-esserlo.html">Quando un oggetto si veste di lusso senza esserlo davvero</a>
-          <span class="s">Negli ultimi dieci anni la parola *lusso* ha smesso di essere sinonimo di esclusività riservata a una ristretta élite. Oggi la stessa bottiglia d’acqua, una penna stilografica o una candela profumata...</span>
+          <span class="s">Negli ultimi dieci anni la parola lusso ha smesso di essere sinonimo di esclusività riservata a una ristretta élite. Oggi la stessa bottiglia d’acqua, una penna stilografica o una candela profumata…</span>
         </span>
       </div>
       
@@ -191,13 +186,13 @@ a { color: inherit; }
         <span class="d">1 set</span>
         <span class="t">
           <a href="./2026/09/2026-09-01-le-piccole-abitudini-in-via-di-estinzione.html">Le piccole abitudini in via di estinzione: cosa perdiamo quando spariscono le telefonate spontanee, i contanti e i biglietti cartacei</a>
-          <span class="s">Nel corso degli ultimi due decenni la vita quotidiana è stata ridisegnata da una serie di innovazioni digitali. Smartphone, pagamenti contactless e servizi online hanno reso più veloce la maggior part...</span>
+          <span class="s">Nel corso degli ultimi due decenni la vita quotidiana è stata ridisegnata da una serie di innovazioni digitali. Smartphone, pagamenti contactless e servizi online hanno reso più veloce la maggior…</span>
         </span>
       </div>
       
     </div>
     
-    <div class="rubrica">
+    <div class="rubrica" id="r-3">
       <h2>Società</h2>
       
       <div class="pezzo">
@@ -212,33 +207,33 @@ a { color: inherit; }
         <span class="d">1 set</span>
         <span class="t">
           <a href="./2026/09/2026-09-01-potere-ambiente-benessere-spazi.html">Il potere invisibile dell’ambiente: come luce, suono e spazio plasmano il nostro benessere in bar, ristoranti, hotel e uffici</a>
-          <span class="s">Passiamo gran parte della nostra vita dentro edifici: casa, lavoro, locali di svago, strutture ricettive. Il 90 % delle nostre ore è trascorso in spazi costruiti, perciò non sorprende che il modo in c...</span>
+          <span class="s">Passiamo gran parte della nostra vita dentro edifici: casa, lavoro, locali di svago, strutture ricettive. Il 90 % delle nostre ore è trascorso in spazi costruiti, perciò non sorprende che il modo in…</span>
         </span>
       </div>
       
     </div>
     
-    <div class="rubrica">
+    <div class="rubrica" id="r-4">
       <h2>Previdenza</h2>
       
       <div class="pezzo">
         <span class="d">1 set</span>
         <span class="t">
           <a href="./2026/09/2026-09-01-riforme-cassa-forense-2025.html">Cassa Forense, la riforma che cambia le regole del gioco per gli avvocati</a>
-          <span class="s">Il 1° gennaio 2025 segna l’avvio di una nuova era per la previdenza degli avvocati italiani. Dopo un iter lungo e articolato, i Ministeri vigilanti hanno dato il via libera al Regolamento unico della...</span>
+          <span class="s">Il 1° gennaio 2025 segna l’avvio di una nuova era per la previdenza degli avvocati italiani. Dopo un iter lungo e articolato, i Ministeri vigilanti hanno dato il via libera al Regolamento unico della…</span>
         </span>
       </div>
       
     </div>
     
-    <div class="rubrica">
+    <div class="rubrica" id="r-5">
       <h2>Tecnologia</h2>
       
       <div class="pezzo">
         <span class="d">1 set</span>
         <span class="t">
           <a href="./2026/09/2026-09-01-laser-infrarossi-controllo-zanzare.html">Laser a infrarossi contro le zanzare: la nuova frontiera della lotta anti‑insetti</a>
-          <span class="s">Le punture di zanzara hanno da sempre accompagnato le serate estive, ma il cambiamento climatico sta allungando la stagione di attività di questi insetti, costringendo le autorità a cercare soluzioni...</span>
+          <span class="s">Le punture di zanzara hanno da sempre accompagnato le serate estive, ma il cambiamento climatico sta allungando la stagione di attività di questi insetti, costringendo le autorità a cercare soluzioni…</span>
         </span>
       </div>
       
