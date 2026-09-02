@@ -2,6 +2,7 @@
 title: "Cassa Forense, la riforma che cambia le regole del gioco per gli avvocati"
 date: 2026-09-01T19:25:33.571342
 slug: riforme-cassa-forense-2025
+category: "Previdenza"
 topic_id: 32
 ---
 
