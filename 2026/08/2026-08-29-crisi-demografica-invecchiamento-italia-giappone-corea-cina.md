@@ -2,6 +2,7 @@
 title: "Crisi demografica: l’invecchiamento della popolazione tra Italia, Giappone, Corea del Sud e Cina"
 date: 2026-08-29T17:06:43.494711
 slug: crisi-demografica-invecchiamento-italia-giappone-corea-cina
+category: "Società"
 topic_id: 24
 ---
 
