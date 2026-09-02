@@ -47,31 +47,36 @@ a { color: inherit; }
            letter-spacing: -0.035em; font-weight: 700; margin-bottom: 0.2rem; }
 .periodo { font-family: var(--serif); font-style: italic; font-size: 1.25rem;
            color: var(--muted); margin-bottom: 1.8rem; }
-.coverlines { display: grid; gap: 0.9rem; max-width: 42ch; }
-.coverline { display: flex; gap: 0.8rem; align-items: baseline; }
-.coverline .r { font-size: 0.64rem; letter-spacing: 0.1em; text-transform: uppercase;
-                color: var(--accent); font-weight: 700; flex: none; width: 6.2rem; padding-top: 0.35rem; }
-.coverline .h { font-family: var(--serif); font-size: 1.18rem; line-height: 1.25; font-weight: 600; }
-.coverline a { text-decoration: none; }
-.coverline a:hover { color: var(--accent); }
+/* di cosa è fatto il numero: le rubriche, non i titoli (quelli stanno nel sommario) */
+.dentro { display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; max-width: 46rem; }
+.dentro a { font-size: 0.74rem; letter-spacing: 0.09em; text-transform: uppercase;
+            font-weight: 600; color: var(--accent); text-decoration: none;
+            border-bottom: 1px solid transparent; padding-bottom: 1px; }
+.dentro a:hover { border-bottom-color: var(--accent); }
+.dentro a .q { color: var(--faint); font-weight: 500; margin-left: 0.25rem;
+               font-variant-numeric: tabular-nums; }
 
 /* sommario */
 .sommario { padding: 2rem 0 2.4rem; }
 .sez-lab { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase;
            color: var(--faint); margin-bottom: 1.2rem; display: flex; align-items: baseline; gap: 0.7rem; }
 .sez-lab::after { content: ""; flex: 1; border-top: 1px solid var(--rule); }
-.rubrica { margin-bottom: 1.5rem; }
+.rubrica { margin-bottom: 2rem; scroll-margin-top: 1.5rem; }
 .rubrica h2 { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
-              color: var(--accent); font-weight: 700; margin-bottom: 0.5rem;
+              color: var(--accent); font-weight: 700; margin-bottom: 0.7rem;
               padding-bottom: 0.3rem; border-bottom: 1px solid #f0e4e4; }
-.pezzo { display: flex; gap: 0.8rem; align-items: baseline; padding: 0.35rem 0; }
-.pezzo .d { font-size: 0.7rem; color: var(--faint); flex: none; width: 3.4rem;
-            font-variant-numeric: tabular-nums; padding-top: 0.25rem; }
-.pezzo .t { font-family: var(--serif); font-size: 1.05rem; line-height: 1.35; }
+.pezzo { display: flex; gap: 1rem; align-items: baseline; padding: 0.55rem 0; }
+.pezzo + .pezzo { border-top: 1px solid #efece4; }
+.pezzo .d { font-size: 0.7rem; color: var(--faint); flex: none; width: 3.2rem;
+            font-variant-numeric: tabular-nums; padding-top: 0.4rem;
+            text-transform: uppercase; letter-spacing: 0.04em; }
+.pezzo .t { font-family: var(--serif); font-size: 1.22rem; line-height: 1.3;
+            font-weight: 600; text-wrap: balance; }
 .pezzo .t a { text-decoration: none; }
-.pezzo .t a:hover { color: var(--accent); text-decoration: underline; }
-.pezzo .s { display: block; font-family: var(--sans); font-size: 0.82rem;
-            color: var(--muted); line-height: 1.5; margin-top: 0.15rem; }
+.pezzo .t a:hover { color: var(--accent); }
+.pezzo .s { display: block; font-family: var(--sans); font-size: 0.85rem;
+            font-weight: 400; color: var(--muted); line-height: 1.55; margin-top: 0.3rem;
+            max-width: 62ch; }
 
 /* scaffale */
 .scaffale { border-top: 3px double var(--rule); padding: 1.8rem 0 3rem; }
@@ -119,27 +124,11 @@ a { color: inherit; }
     </div>
     <div class="testata">Pubblicio</div>
     <div class="periodo">Luglio 2026</div>
-    <div class="coverlines">
+    <div class="dentro">
       
-      <div class="coverline">
-        <span class="r">Tecnologia</span>
-        <span class="h"><a href="../2026/07/2026-07-31-amazon-starlink-sfida-satelliti.html">Amazon lancia la sfida a Starlink con una costellazione di oltre 5.000 satelliti LEO</a></span>
-      </div>
+      <a href="#r-1">Tecnologia<span class="q">3</span></a>
       
-      <div class="coverline">
-        <span class="r">Ambiente</span>
-        <span class="h"><a href="../2026/07/2026-07-29-super-el-nino-europa-impatto.html">Super El Niño in arrivo: cosa attende l&#39;Europa tra caldo, alluvioni e sfide per agricoltura ed energia</a></span>
-      </div>
-      
-      <div class="coverline">
-        <span class="r">Tecnologia</span>
-        <span class="h"><a href="../2026/07/2026-07-29-anthropic-claude-cryptanalysis-aes-hawk.html">Claude di Anthropic scopre vulnerabilità in AES e nel candidato post‑quantum HAWK: l’AI entra nella cripto‑analisi</a></span>
-      </div>
-      
-      <div class="coverline">
-        <span class="r">Tecnologia</span>
-        <span class="h"><a href="../2026/07/2026-07-29-tabular-foundation-models-svolta-ai-impresa.html">Tabular Foundation Models: la svolta dell&#39;AI per le imprese</a></span>
-      </div>
+      <a href="#r-2">Ambiente<span class="q">1</span></a>
       
     </div>
   </section>
@@ -147,14 +136,14 @@ a { color: inherit; }
   <section class="sommario">
     <div class="sez-lab">Sommario</div>
     
-    <div class="rubrica">
+    <div class="rubrica" id="r-1">
       <h2>Tecnologia</h2>
       
       <div class="pezzo">
         <span class="d">31 lug</span>
         <span class="t">
           <a href="../2026/07/2026-07-31-amazon-starlink-sfida-satelliti.html">Amazon lancia la sfida a Starlink con una costellazione di oltre 5.000 satelliti LEO</a>
-          <span class="s">Amazon ha appena presentato alla Federal Communications Commission (FCC) la domanda di autorizzazione per lanciare **fino a 5.105 satelliti in orbita bassa (LEO)**. Il progetto, denominato *Leo Direct...</span>
+          <span class="s">Amazon ha appena presentato alla Federal Communications Commission (FCC) la domanda di autorizzazione per lanciare fino a 5.105 satelliti in orbita bassa (LEO). Il progetto, denominato Leo…</span>
         </span>
       </div>
       
@@ -162,7 +151,7 @@ a { color: inherit; }
         <span class="d">29 lug</span>
         <span class="t">
           <a href="../2026/07/2026-07-29-anthropic-claude-cryptanalysis-aes-hawk.html">Claude di Anthropic scopre vulnerabilità in AES e nel candidato post‑quantum HAWK: l’AI entra nella cripto‑analisi</a>
-          <span class="s">Nel fine settimana del 28 luglio 2026 Anthropic ha annunciato che il suo modello di frontiera, **Claude Mythos Preview**, è riuscito a individuare due nuove debolezze in algoritmi crittografici di gra...</span>
+          <span class="s">Nel fine settimana del 28 luglio 2026 Anthropic ha annunciato che il suo modello di frontiera, Claude Mythos Preview, è riuscito a individuare due nuove debolezze in algoritmi crittografici di grande…</span>
         </span>
       </div>
       
@@ -170,20 +159,20 @@ a { color: inherit; }
         <span class="d">29 lug</span>
         <span class="t">
           <a href="../2026/07/2026-07-29-tabular-foundation-models-svolta-ai-impresa.html">Tabular Foundation Models: la svolta dell&#39;AI per le imprese</a>
-          <span class="s">Le tabelle – CSV, fogli di calcolo o tabelle relazionali – costituiscono il cuore pulsante di quasi tutti i sistemi informativi aziendali. Storicamente, per trasformarle in previsioni utili si è dovut...</span>
+          <span class="s">Le tabelle – CSV, fogli di calcolo o tabelle relazionali – costituiscono il cuore pulsante di quasi tutti i sistemi informativi aziendali. Storicamente, per trasformarle in previsioni utili si è…</span>
         </span>
       </div>
       
     </div>
     
-    <div class="rubrica">
+    <div class="rubrica" id="r-2">
       <h2>Ambiente</h2>
       
       <div class="pezzo">
         <span class="d">29 lug</span>
         <span class="t">
           <a href="../2026/07/2026-07-29-super-el-nino-europa-impatto.html">Super El Niño in arrivo: cosa attende l&#39;Europa tra caldo, alluvioni e sfide per agricoltura ed energia</a>
-          <span class="s">- **Europa meridionale**: le previsioni indicano temperature superiori di **2‑3 °C** rispetto alla media stagionale, con picchi che potrebbero superare i **40 °C** in Spagna, Italia e Grecia. - **Euro...</span>
+          <span class="s">- Europa meridionale: le previsioni indicano temperature superiori di 2‑3 °C rispetto alla media stagionale, con picchi che potrebbero superare i 40 °C in Spagna, Italia e Grecia. - Europa…</span>
         </span>
       </div>
       
