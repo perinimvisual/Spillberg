@@ -2,6 +2,7 @@
 title: "Tabular Foundation Models: la svolta dell'AI per le imprese"
 date: 2026-07-29T14:30:15.110301
 slug: tabular-foundation-models-svolta-ai-impresa
+category: "Tecnologia"
 topic_id: 1
 ---
 
