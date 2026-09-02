@@ -28,6 +28,10 @@ body { font-family: var(--sans); background: var(--paper); color: var(--ink); li
 h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height: 1.15; letter-spacing: -0.015em; margin-bottom: 0.8rem; }
 .standfirst { font-family: var(--serif); font-size: 1.15rem; font-style: italic; color: #444; line-height: 1.5; margin-bottom: 1.2rem; }
 .byline { font-size: 0.82rem; color: var(--muted); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 0.6rem 0; margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+.numero-tag { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; margin: -1.2rem 0 1.8rem; }
+.numero-tag a { color: var(--accent); text-decoration: none; font-weight: 600; border-bottom: 1px solid #f0d6d6; }
+.numero-tag a:hover { border-bottom-color: var(--accent); }
+.numero-tag.attesa { color: #8a7f6d; }
 .update-link { display: block; font-size: 0.85rem; background: #f4f1ea; border-left: 3px solid var(--accent); padding: 0.7rem 1rem; margin: 1.5rem 0; }
 .update-link a { color: var(--accent); text-decoration: none; font-weight: 600; }
 .update-link a:hover { text-decoration: underline; }
@@ -76,8 +80,11 @@ h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height
 <body>
 <header class="masthead">
   <div class="inner">
-    <a class="brand" href="../index.html">Pubblicio</a>
-    <nav><a href="../index.html">Archivio</a></nav>
+    <a class="brand" href="../../index.html">Pubblicio</a>
+    <nav>
+      <a href="../../index.html">Il numero</a>
+      <a href="../../tutti.html">Tutti gli articoli</a>
+    </nav>
   </div>
 </header>
 
@@ -86,9 +93,11 @@ h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height
   <h1>Il trucco dell’illusione di spazio: perché i negozi sembrano vuoti anche quando non lo sono</h1>
   <p class="standfirst">Analisi dei trucchi di visual merchandising – vetrine, illuminazione, musica, disposizione – che creano l’illusione di spazi meno affollati per stimolare l’acquisto. Si includono esempi pratici.</p>
   <div class="byline">
-    <span>02 September 2026</span>
+    <span>2 settembre 2026</span>
     <span>economia, retail, visual-merchandising, neuromarketing, psicologia-del-consumatore, design</span>
   </div>
+
+  <!--NUMERO--><div class="numero-tag"><a href="../../numeri/2026-09.html">Numero 3 &middot; Settembre 2026</a></div><!--/NUMERO-->
 
   
   
@@ -161,7 +170,7 @@ L’assenza di “rumore visivo” crea l’illusione di un ambiente esclusivo e
 </article>
 
 <footer class="colophon">
-  <p>Pubblicato il 02 September 2026 &middot; Pubblicio</p>
+  <p>Pubblicato il 2 settembre 2026 &middot; Pubblicio</p>
   
 </footer>
 </body>
