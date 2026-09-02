@@ -28,6 +28,10 @@ body { font-family: var(--sans); background: var(--paper); color: var(--ink); li
 h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height: 1.15; letter-spacing: -0.015em; margin-bottom: 0.8rem; }
 .standfirst { font-family: var(--serif); font-size: 1.15rem; font-style: italic; color: #444; line-height: 1.5; margin-bottom: 1.2rem; }
 .byline { font-size: 0.82rem; color: var(--muted); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 0.6rem 0; margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+.numero-tag { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; margin: -1.2rem 0 1.8rem; }
+.numero-tag a { color: var(--accent); text-decoration: none; font-weight: 600; border-bottom: 1px solid #f0d6d6; }
+.numero-tag a:hover { border-bottom-color: var(--accent); }
+.numero-tag.attesa { color: #8a7f6d; }
 .update-link { display: block; font-size: 0.85rem; background: #f4f1ea; border-left: 3px solid var(--accent); padding: 0.7rem 1rem; margin: 1.5rem 0; }
 .update-link a { color: var(--accent); text-decoration: none; font-weight: 600; }
 .update-link a:hover { text-decoration: underline; }
@@ -70,8 +74,11 @@ h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height
 <body>
 <header class="masthead">
   <div class="inner">
-    <a class="brand" href="../index.html">Pubblicio</a>
-    <nav><a href="../index.html">Archivio</a></nav>
+    <a class="brand" href="../../index.html">Pubblicio</a>
+    <nav>
+      <a href="../../index.html">Il numero</a>
+      <a href="../../tutti.html">Tutti gli articoli</a>
+    </nav>
   </div>
 </header>
 
@@ -80,9 +87,11 @@ h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height
   <h1>Metalli rari: la corsa globale per litio, cobalto e terre rare</h1>
   <p class="standfirst">La transizione energetica e digitale dipende da materiali come litio, cobalto e terre rare, considerati strategici ma non così rari da essere insostituibili. L&#39;articolo esaminerà le catene di approvvigionamento, le tensioni geopolitiche e le alternative emergenti.</p>
   <div class="byline">
-    <span>28 August 2026</span>
+    <span>28 agosto 2026</span>
     <span>metalli rari, litio, cobalto, terre rare, geopolitica, transizione energetica, economia</span>
   </div>
+
+  <!--NUMERO--><div class="numero-tag"><a href="../../numeri/2026-08.html">Numero 2 &middot; Agosto 2026</a></div><!--/NUMERO-->
 
   
   
@@ -119,7 +128,7 @@ h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height
 </article>
 
 <footer class="colophon">
-  <p>Pubblicato il 28 August 2026 &middot; Pubblicio</p>
+  <p>Pubblicato il 28 agosto 2026 &middot; Pubblicio</p>
   
 </footer>
 </body>
