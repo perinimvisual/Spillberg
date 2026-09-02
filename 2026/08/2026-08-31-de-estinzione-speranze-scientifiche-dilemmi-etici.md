@@ -2,6 +2,7 @@
 title: "De‑estinzione: tra speranze scientifiche e dilemmi etici il ritorno dei giganti scomparsi"
 date: 2026-08-31T12:35:24.757949
 slug: de-estinzione-speranze-scientifiche-dilemmi-etici
+category: "Cultura"
 topic_id: 26
 ---
 
