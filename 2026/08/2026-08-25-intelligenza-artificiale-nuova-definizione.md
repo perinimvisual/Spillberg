@@ -2,6 +2,7 @@
 title: "Intelligenza artificiale: la nuova frontiera del concetto di intelligenza"
 date: 2026-08-25T13:58:26.574911
 slug: intelligenza-artificiale-nuova-definizione
+category: "Tecnologia"
 topic_id: 18
 ---
 
