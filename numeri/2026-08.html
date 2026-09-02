@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pubblicio — n. 2, Agosto 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+  --ink: #1a1a1a;
+  --muted: #6b6b66;
+  --faint: #8a8a86;
+  --rule: #e0ddd6;
+  --accent: #b91c1c;
+  --accent-wash: #fdf2f2;
+  --paper: #fafaf7;
+  --cream: #f6f2e9;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.7; }
+a { color: inherit; }
+
+.masthead { border-bottom: 3px double var(--rule); padding: 1.2rem 0; background: #fff; }
+.masthead .inner { max-width: 860px; margin: 0 auto; padding: 0 1.5rem;
+                   display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+.brand { font-family: var(--serif); font-weight: 700; font-size: 1.4rem; text-decoration: none; }
+.masthead nav { display: flex; gap: 1.1rem; }
+.masthead nav a { font-size: 0.78rem; color: var(--muted); text-decoration: none;
+                  text-transform: uppercase; letter-spacing: 0.08em; }
+.masthead nav a:hover, .masthead nav a.on { color: var(--accent); }
+
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* copertina */
+.cover { padding: 3rem 0 2.2rem; border-bottom: 3px double var(--rule); }
+.cover-meta { display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap;
+              font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;
+              color: var(--faint); margin-bottom: 1.2rem; }
+.issue-no { font-weight: 700; letter-spacing: 0.06em; color: var(--accent);
+            background: var(--accent-wash); padding: 0.15rem 0.5rem; border-radius: 2px; }
+.aperto { border: 1px solid #cfe3d4; background: #f0f9f2; color: #2c6b41;
+          padding: 0.15rem 0.5rem; border-radius: 2px; font-weight: 600; letter-spacing: 0.08em; }
+.testata { font-family: var(--serif); font-size: clamp(2.6rem, 8vw, 4.6rem); line-height: 0.95;
+           letter-spacing: -0.035em; font-weight: 700; margin-bottom: 0.2rem; }
+.periodo { font-family: var(--serif); font-style: italic; font-size: 1.25rem;
+           color: var(--muted); margin-bottom: 1.8rem; }
+.coverlines { display: grid; gap: 0.9rem; max-width: 42ch; }
+.coverline { display: flex; gap: 0.8rem; align-items: baseline; }
+.coverline .r { font-size: 0.64rem; letter-spacing: 0.1em; text-transform: uppercase;
+                color: var(--accent); font-weight: 700; flex: none; width: 6.2rem; padding-top: 0.35rem; }
+.coverline .h { font-family: var(--serif); font-size: 1.18rem; line-height: 1.25; font-weight: 600; }
+.coverline a { text-decoration: none; }
+.coverline a:hover { color: var(--accent); }
+
+/* sommario */
+.sommario { padding: 2rem 0 2.4rem; }
+.sez-lab { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase;
+           color: var(--faint); margin-bottom: 1.2rem; display: flex; align-items: baseline; gap: 0.7rem; }
+.sez-lab::after { content: ""; flex: 1; border-top: 1px solid var(--rule); }
+.rubrica { margin-bottom: 1.5rem; }
+.rubrica h2 { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+              color: var(--accent); font-weight: 700; margin-bottom: 0.5rem;
+              padding-bottom: 0.3rem; border-bottom: 1px solid #f0e4e4; }
+.pezzo { display: flex; gap: 0.8rem; align-items: baseline; padding: 0.35rem 0; }
+.pezzo .d { font-size: 0.7rem; color: var(--faint); flex: none; width: 3.4rem;
+            font-variant-numeric: tabular-nums; padding-top: 0.25rem; }
+.pezzo .t { font-family: var(--serif); font-size: 1.05rem; line-height: 1.35; }
+.pezzo .t a { text-decoration: none; }
+.pezzo .t a:hover { color: var(--accent); text-decoration: underline; }
+.pezzo .s { display: block; font-family: var(--sans); font-size: 0.82rem;
+            color: var(--muted); line-height: 1.5; margin-top: 0.15rem; }
+
+/* scaffale */
+.scaffale { border-top: 3px double var(--rule); padding: 1.8rem 0 3rem; }
+.numeri { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+.mini { border: 1px solid var(--rule); border-radius: 3px; background: #fff;
+        padding: 0.7rem 0.9rem 0.8rem; min-width: 8rem; text-decoration: none;
+        display: block; transition: border-color 0.15s, transform 0.15s; }
+.mini:hover { border-color: var(--accent); transform: translateY(-2px); }
+.mini.on { border-color: var(--accent); background: var(--accent-wash); }
+.mini .n { font-size: 0.66rem; font-weight: 700; color: var(--accent); letter-spacing: 0.06em; }
+.mini .p { font-family: var(--serif); font-size: 1rem; font-weight: 600; margin: 0.15rem 0 0.05rem; line-height: 1.15; }
+.mini .c { font-size: 0.7rem; color: var(--faint); font-variant-numeric: tabular-nums; }
+
+.piede { border-top: 1px solid var(--rule); padding: 1.4rem 0 2.5rem;
+         font-size: 0.75rem; color: var(--faint); text-align: center; }
+.piede a { color: var(--muted); }
+
+@media (max-width: 620px) {
+  .coverline { display: block; }
+  .coverline .r { width: auto; padding-top: 0; margin-bottom: 0.15rem; }
+  .pezzo { display: block; }
+  .pezzo .d { width: auto; padding-top: 0; }
+}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="inner">
+    <a class="brand" href="../index.html">Pubblicio</a>
+    <nav>
+      <a href="../index.html" >Il numero</a>
+      <a href="#numeri">Numeri usciti</a>
+      <a href="../tutti.html">Tutti gli articoli</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="cover">
+    <div class="cover-meta">
+      <span class="issue-no">n. 2</span>
+      <span>17 articoli</span>
+      
+    </div>
+    <div class="testata">Pubblicio</div>
+    <div class="periodo">Agosto 2026</div>
+    <div class="coverlines">
+      
+      <div class="coverline">
+        <span class="r">Ambiente</span>
+        <span class="h"><a href="../2026/08/2026-08-31-acqua-oro-blu-xxi-secolo.html">Acqua, l’oro blu del XXI secolo: desalinizzazione, falde sotterranee e le nuove tensioni geopolitiche</a></span>
+      </div>
+      
+      <div class="coverline">
+        <span class="r">Società</span>
+        <span class="h"><a href="../2026/08/2026-08-31-cervello-umano-frontiere-neuroscienza-interfacce.html">Cervello umano: frontiere della neuroscienza e le nuove interfacce cervello‑computer</a></span>
+      </div>
+      
+      <div class="coverline">
+        <span class="r">Tecnologia</span>
+        <span class="h"><a href="../2026/08/2026-08-31-robot-autonomi-vita-quotidiana-opportunita-rischi.html">Robot autonomi nella vita quotidiana: opportunità, rischi e la sfida della convivenza</a></span>
+      </div>
+      
+      <div class="coverline">
+        <span class="r">Cultura</span>
+        <span class="h"><a href="../2026/08/2026-08-31-de-estinzione-speranze-scientifiche-dilemmi-etici.html">De‑estinzione: tra speranze scientifiche e dilemmi etici il ritorno dei giganti scomparsi</a></span>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="sommario">
+    <div class="sez-lab">Sommario</div>
+    
+    <div class="rubrica">
+      <h2>Società</h2>
+      
+      <div class="pezzo">
+        <span class="d">31 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-31-cervello-umano-frontiere-neuroscienza-interfacce.html">Cervello umano: frontiere della neuroscienza e le nuove interfacce cervello‑computer</a>
+          <span class="s">Il cervello umano, con i suoi circa 86 miliardi di neuroni e le centinaia di trilioni di sinapsi, è l’unico organo che, pur pesando meno di due chili, gestisce tutto quello che facciamo, sentiamo e im...</span>
+        </span>
+      </div>
+      
+      <div class="pezzo">
+        <span class="d">29 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-29-crisi-demografica-invecchiamento-italia-giappone-corea-cina.html">Crisi demografica: l’invecchiamento della popolazione tra Italia, Giappone, Corea del Sud e Cina</a>
+          <span class="s">L’invecchiamento della popolazione non è più un’ipotesi di lungo periodo, ma una realtà che sta già trasformando l’economia e il welfare di quattro grandi economie: l’Italia, il Giappone, la Corea del...</span>
+        </span>
+      </div>
+      
+      <div class="pezzo">
+        <span class="d">27 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-27-mistero-longevita-scienza-fantascienza.html">Il mistero della longevità: tra scienza seria e fantascienza</a>
+          <span class="s">Fin dalla notte dei tempi l’uomo ha sognato di superare i limiti imposti dal tempo. Oggi, grazie a un flusso di investimenti miliardari e a progressi che un tempo appartenevano al regno della fantasci...</span>
+        </span>
+      </div>
+      
+      <div class="pezzo">
+        <span class="d">25 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-25-ebola-2026-epidemia-fine-luglio.html">Ebola 2026: l’estensione dell’epidemia a fine luglio</a>
+          <span class="s">L’Organizzazione Mondiale della Sanità ha pubblicato, il 30 luglio, i dati più recenti sull’ultima ondata di Ebola. **3 605 casi confermati** e **1 587 decessi** sono stati registrati in Repubblica De...</span>
+        </span>
+      </div>
+      
+      <div class="pezzo">
+        <span class="d">15 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-15-dna-nuova-speranza-caso-simonetta-cesaroni.html">DNA, la nuova speranza nel caso Simonetta Cesaroni: indagini a 36 anni dal delitto</a>
+          <span class="s">Il 7 agosto 1990 la ventenne Simonetta Cesaroni veniva trovata morta, trafitta da 29 coltellate, negli uffici di via Poma, a Prati. Da allora il caso è rimasto avvolto da dubbi, errori investigativi e...</span>
+        </span>
+      </div>
+      
+    </div>
+    
+    <div class="rubrica">
+      <h2>Tecnologia</h2>
+      
+      <div class="pezzo">
+        <span class="d">31 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-31-robot-autonomi-vita-quotidiana-opportunita-rischi.html">Robot autonomi nella vita quotidiana: opportunità, rischi e la sfida della convivenza</a>
+          <span class="s">Negli ultimi mesi i robot umanoidi hanno lasciato il laboratorio per entrare nelle case, negli ospedali e nei magazzini. Grazie a sensori sempre più sofisticati, algoritmi di deep‑learning e batterie...</span>
+        </span>
+      </div>
+      
+      <div class="pezzo">
+        <span class="d">30 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-30-citta-futuro-sotterranee-infrastrutture-urbane.html">Sotto i nostri piedi: le città del futuro affondano nel sottosuolo</a>
+          <span class="s">Le metropoli più grandi del pianeta stanno iniziando a sentirsi strette. Tra crescita demografica, carenza di terreni edificabili e pressioni ambientali, gli urbanisti stanno riscoprendo una risorsa c...</span>
+        </span>
+      </div>
+      
+      <div class="pezzo">
+        <span class="d">25 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-25-robot-autonomi-vita-quotidiana-opportunita-rischi.html">Robot autonomi nella vita quotidiana: opportunità, rischi e la sfida della convivenza</a>
+          <span class="s">Negli ultimi mesi i robot umanoidi hanno lasciato il laboratorio per entrare nelle case, negli ospedali e nei magazzini. Grazie a sensori sempre più sofisticati, algoritmi di deep‑learning e batterie...</span>
+        </span>
+      </div>
+      
+      <div class="pezzo">
+        <span class="d">25 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-25-intelligenza-artificiale-nuova-definizione.html">Intelligenza artificiale: la nuova frontiera del concetto di intelligenza</a>
+          <span class="s">Negli ultimi anni la capacità delle intelligenze artificiali di produrre testi, codici, immagini e persino melodie ha spinto studiosi, imprenditori e cittadini a riconsiderare la definizione tradizion...</span>
+        </span>
+      </div>
+      
+      <div class="pezzo">
+        <span class="d">16 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-16-dibattito-stabilita-data-privacy-framework-usa.html">Il Data Privacy Framework tra la Corte Suprema americana e l’Unione europea: un equilibrio precario</a>
+          <span class="s">Il 29 giugno 2026 la Corte Suprema degli Stati Uniti ha emesso la sentenza **Trump v. Slaughter**, una decisione che, pur non trattando direttamente la normativa europea sulla protezione dei dati, ha...</span>
+        </span>
+      </div>
+      
+    </div>
+    
+    <div class="rubrica">
+      <h2>Ambiente</h2>
+      
+      <div class="pezzo">
+        <span class="d">31 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-31-acqua-oro-blu-xxi-secolo.html">Acqua, l’oro blu del XXI secolo: desalinizzazione, falde sotterranee e le nuove tensioni geopolitiche</a>
+          <span class="s">Negli ultimi decenni la percezione dell’acqua è mutata radicalmente: da bene apparentemente illimitato è diventata la materia prima più contesa del pianeta. Le proiezioni delle Nazioni Unite indicano...</span>
+        </span>
+      </div>
+      
+      <div class="pezzo">
+        <span class="d">27 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-27-ghiaccio-artico-ritirata-rotte-risorse-geopolitica.html">Il ghiaccio artico in ritirata: rotte marittime, risorse strategiche e la nuova frontiera geopolitica</a>
+          <span class="s">L&#39;Artico sta vivendo una trasformazione senza precedenti: le temperature medie aumentano quasi quattro volte più velocemente della media globale e il permafrost si sta scongelando a ritmo allarmante....</span>
+        </span>
+      </div>
+      
+    </div>
+    
+    <div class="rubrica">
+      <h2>Economia</h2>
+      
+      <div class="pezzo">
+        <span class="d">28 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-28-corsa-globale-metalli-rare-litio-cobalto-terre-rare.html">Metalli rari: la corsa globale per litio, cobalto e terre rare</a>
+          <span class="s">Mentre il mondo si avvia verso una decarbonizzazione accelerata, la domanda di **litio, cobalto e terre rare** è esplosa. Questi elementi, definiti “critici” dalle autorità europee, non sono rari in s...</span>
+        </span>
+      </div>
+      
+      <div class="pezzo">
+        <span class="d">25 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-25-ritorno-nucleare-smr-energia-economica.html">Nucleare di ritorno: i piccoli reattori modulari tra speranza economica e sfide ambientali</a>
+          
+        </span>
+      </div>
+      
+    </div>
+    
+    <div class="rubrica">
+      <h2>Cultura</h2>
+      
+      <div class="pezzo">
+        <span class="d">31 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-31-de-estinzione-speranze-scientifiche-dilemmi-etici.html">De‑estinzione: tra speranze scientifiche e dilemmi etici il ritorno dei giganti scomparsi</a>
+          <span class="s">Negli ultimi decenni la genomica ha compiuto progressi così rapidi da trasformare la fantascienza in un progetto di ricerca concreto. La possibilità di riportare in vita specie che hanno scomparso dal...</span>
+        </span>
+      </div>
+      
+    </div>
+    
+    <div class="rubrica">
+      <h2>Estero</h2>
+      
+      <div class="pezzo">
+        <span class="d">25 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-25-luna-come-frontiera-geopolitica.html">La Luna, nuova frontiera geopolitica: la corsa allo spazio tra USA, Cina, Europa e altri attori</a>
+          <span class="s">Dopo più di cinquant’anni di silenzio, la Luna è tornata al centro dell’agenda internazionale. Il recente volo della capsula Orion intorno al satellite, il successo del *Chandrayaan‑3* indiano e le di...</span>
+        </span>
+      </div>
+      
+    </div>
+    
+    <div class="rubrica">
+      <h2>Politica</h2>
+      
+      <div class="pezzo">
+        <span class="d">26 ago</span>
+        <span class="t">
+          <a href="../2026/08/2026-08-26-guerra-dei-chip-geopolitica.html">La guerra dei chip: il nuovo campo di battaglia della geopolitica mondiale</a>
+          <span class="s">Nel 2026 il potere globale non si misura più in barili di petrolio o in tonnellate di acciaio, ma in nanometri di silicio. I microchip, componenti microscopici alla base di smartphone, veicoli autonom...</span>
+        </span>
+      </div>
+      
+    </div>
+    
+  </section>
+
+  <section class="scaffale" id="numeri">
+    <div class="sez-lab">Numeri usciti</div>
+    <div class="numeri">
+      
+      <a class="mini " href="../numeri/2026-09.html">
+        <span class="n">n. 3</span>
+        <div class="p">Settembre</div>
+        <div class="c">9 articoli</div>
+      </a>
+      
+      <a class="mini on" href="../numeri/2026-08.html">
+        <span class="n">n. 2</span>
+        <div class="p">Agosto</div>
+        <div class="c">17 articoli</div>
+      </a>
+      
+      <a class="mini " href="../numeri/2026-07.html">
+        <span class="n">n. 1</span>
+        <div class="p">Luglio</div>
+        <div class="c">4 articoli</div>
+      </a>
+      
+    </div>
+  </section>
+
+  <div class="piede">
+    Pubblicio &middot; <a href="../tutti.html">l'elenco completo degli articoli</a>
+  </div>
+</div>
+</body>
+</html>
