@@ -2,6 +2,7 @@
 title: "Claude di Anthropic scopre vulnerabilità in AES e nel candidato post‑quantum HAWK: l’AI entra nella cripto‑analisi"
 date: 2026-07-29T14:43:40.704592
 slug: anthropic-claude-cryptanalysis-aes-hawk
+category: "Tecnologia"
 topic_id: 10
 ---
 
