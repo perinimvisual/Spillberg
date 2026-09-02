@@ -14,11 +14,11 @@ Nel mondo dell’orologeria di alta gamma, pochi marchi riescono a generare l’
 
 ## Il modello di supply‑chain limitata
 
-Rolex mantiene deliberatamente una produzione contenuta, creando liste d’attesa infinite e una disponibilità **contingentata** dei propri modelli. Questa politica, più che una semplice restrizione operativa, è un vero e proprio strumento di gestione della domanda.
+Rolex mantiene deliberatamente una produzione contenuta, creando liste d’attesa infinite e una disponibilità **contingentata** dei propri modelli. Questa politica, più che una semplice restrizione operativa, è un vero e proprio strumento di gestione della domanda [[1]].
 
 ## Il mercato dell’usato certificato
 
-Il segmento globale degli orologi svizzeri di seconda mano ha superato i **25 miliardi di dollari** di fatturato annuo. In questo contesto, il *Certified Pre‑Owned* di Rolex si distingue per la capacità di aggiungere valore: gli acquirenti sono disposti a pagare **fino al 30 % in più** per un esemplare certificato rispetto a uno non certificato.
+Il segmento globale degli orologi svizzeri di seconda mano ha superato i **25 miliardi di dollari** di fatturato annuo [[1]]. In questo contesto, il *Certified Pre‑Owned* di Rolex si distingue per la capacità di aggiungere valore: gli acquirenti sono disposti a pagare **fino al 30 % in più** per un esemplare certificato rispetto a uno non certificato [[1]].
 
 ## Perché nasce il programma Certified Pre‑Owned?
 
@@ -26,11 +26,11 @@ Il lancio del CPO risponde a tre esigenze fondamentali:
 
 1. **Ridurre la speculazione** e l’attività dei flipper, che nei periodi di alta domanda spingono i prezzi ben oltre il listino ufficiale.
 2. **Contrastare le contraffazioni**, garantendo che ogni orologio ricondizionato sia autentico e conforme agli standard di fabbrica.
-3. **Rafforzare la fiducia** dei consumatori, offrendo una garanzia internazionale di **due anni** e una revisione completa secondo i criteri di produzione Rolex.
+3. **Rafforzare la fiducia** dei consumatori, offrendo una garanzia internazionale di **due anni** e una revisione completa secondo i criteri di produzione Rolex [[1]].
 
 ## Come funziona la catena di valore
 
-Contrariamente a quanto si potrebbe pensare, Rolex **non acquista né rivende direttamente** gli orologi usati. L’intera operatività del programma è affidata ai **concessionari autorizzati**, che si occupano di reperire gli esemplari, sottoporli a una verifica approfondita e proporli al pubblico con il marchio di certificazione.
+Contrariamente a quanto si potrebbe pensare, Rolex **non acquista né rivende direttamente** gli orologi usati. L’intera operatività del programma è affidata ai **concessionari autorizzati**, che si occupano di reperire gli esemplari, sottoporli a una verifica approfondita e proporli al pubblico con il marchio di certificazione [[1]].
 
 I concessionari, pur operando con margini più contenuti rispetto al mercato secondario non controllato, traggono vantaggio da costi di manutenzione e da un servizio di certificazione che aggiunge un **premium** al prezzo finale. Questo modello consente a Rolex di mantenere il controllo sulla qualità e sulla percezione del valore, senza immobilizzare capitale in magazzino.
 
@@ -50,9 +50,3 @@ Nel contesto digitale, dove la domanda di beni di lusso è sempre più influenza
 > *Il valore di un Rolex non è solo nel suo movimento, ma nella storia che il marchio riesce a preservare attraverso scelte di produzione consapevoli.*
 
 In sintesi, il meccanismo di contingentamento delle vendite di Rolex, integrato dal programma Certified Pre‑Owned, si dimostra una strategia **economicamente sostenibile** e capace di rispondere alle nuove dinamiche di consumo, garantendo al contempo la continuità del prestigio del brand.
-
----
-
-**Fonti**
-
-1. Carmine Di Donato, *Rolex e il mercato dell’usato certificato: una strategia che cambia le regole del lusso*, RecensioniOrologi.it, citato da Wall Street Journal.
