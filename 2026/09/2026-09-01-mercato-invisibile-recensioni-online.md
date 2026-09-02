@@ -2,6 +2,7 @@
 title: "Il mercato invisibile delle recensioni online: come poche stelle cambiano le scelte dei consumatori"
 date: 2026-09-01T20:53:08.836685
 slug: mercato-invisibile-recensioni-online
+category: "Economia"
 topic_id: 34
 ---
 
