@@ -2,6 +2,7 @@
 title: "Super El Niño in arrivo: cosa attende l'Europa tra caldo, alluvioni e sfide per agricoltura ed energia"
 date: 2026-07-29T18:06:02.496515
 slug: super-el-nino-europa-impatto
+category: "Ambiente"
 topic_id: 5
 ---
 
