@@ -18,7 +18,11 @@
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: var(--sans); background: var(--color-bg); color: var(--color-text); line-height: 1.7; }
-.container { max-width: 780px; margin: 0 auto; padding: 3rem 1.5rem; }
+.container { max-width: 980px; margin: 0 auto; padding: 3rem 1.5rem; }
+nav.sito { display: flex; gap: 1.1rem; flex-wrap: wrap; margin-bottom: 1.2rem; }
+nav.sito a { font-size: 0.78rem; color: var(--color-muted); text-decoration: none;
+             text-transform: uppercase; letter-spacing: 0.08em; }
+nav.sito a:hover, nav.sito a.on { color: var(--color-accent); }
 header { border-bottom: 3px double var(--color-border); padding-bottom: 1.5rem; margin-bottom: 2rem; }
 h1 { font-family: var(--serif); font-size: 2.8rem; font-weight: 700; letter-spacing: -0.02em; }
 .subtitle { color: var(--color-muted); font-size: 0.95rem; margin-top: 0.3rem; }
@@ -39,9 +43,14 @@ h2 a:hover { color: var(--color-accent); }
 </head>
 <body>
 <div class="container">
+  <nav class="sito">
+    <a href="index.html">Numero in edicola</a>
+    <a href="index.html#numeri">Numeri precedenti</a>
+    <a href="tutti.html" class="on">Archivio articoli</a>
+  </nav>
   <header>
     <h1>Pubblicio</h1>
-    <p class="subtitle">31 articoli pubblicati</p>
+    <p class="subtitle">32 articoli pubblicati</p>
   </header>
   
   <nav class="filters" id="cat-filters">
@@ -70,6 +79,15 @@ h2 a:hover { color: var(--color-accent); }
   </nav>
   
   <div id="article-list">
+  
+  <article class="article-entry" data-category="Società" data-date="2026-09">
+    <div class="entry-meta">
+      2026-09-02T23:57:53.299517 &middot; <span class="tag">Società</span>
+    </div>
+    <h2><a href="2026/09/2026-09-02-design-persuasivo-citta-modellano-comportamenti.html">Design persuasivo: come le città modellano i comportamenti senza imposizioni</a></h2>
+    <p class="entry-summary">Le città non sono più solo reti di strade e edifici: sono ambienti progettati per influenzare, quasi silenziosamente, le scelte quotidiane dei cittadini. Panchine, cestini, semafori e piste ciclabili…</p>
+  </article>
+  <span class="separator">&middot; &middot; &middot;</span>
   
   <article class="article-entry" data-category="Economia" data-date="2026-09">
     <div class="entry-meta">
