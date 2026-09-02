@@ -2,6 +2,7 @@
 title: "Galateo contemporaneo: le regole invisibili della vita quotidiana"
 date: 2026-09-02T16:06:53.098334
 slug: galateo-contemporaneo-regole-invisibili
+category: "Società"
 topic_id: 36
 ---
 
