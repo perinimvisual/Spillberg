@@ -2,6 +2,7 @@
 title: "Ebola 2026: l’estensione dell’epidemia a fine luglio"
 date: 2026-08-25T13:23:36.572263
 slug: ebola-2026-epidemia-fine-luglio
+category: "Società"
 topic_id: 14
 ---
 
