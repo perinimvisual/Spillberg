@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Geotermia di nuova generazione: il caso Fervo‑Google — Pubblicio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+  --ink: #1a1a1a;
+  --muted: #666;
+  --rule: #e0ddd6;
+  --accent: #b91c1c;
+  --paper: #fafaf7;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.75; }
+.masthead { border-bottom: 3px double var(--rule); padding: 1.2rem 0; }
+.masthead .inner { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: baseline; }
+.brand { font-family: var(--serif); font-weight: 700; font-size: 1.4rem; color: var(--ink); text-decoration: none; }
+.masthead nav a { font-size: 0.8rem; color: var(--muted); text-decoration: none; text-transform: uppercase; letter-spacing: 0.08em; }
+.masthead nav a:hover { color: var(--accent); }
+.article { max-width: 680px; margin: 2.5rem auto; padding: 0 1.5rem; }
+.kicker { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.6rem; }
+h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height: 1.15; letter-spacing: -0.015em; margin-bottom: 0.8rem; }
+.standfirst { font-family: var(--serif); font-size: 1.15rem; font-style: italic; color: #444; line-height: 1.5; margin-bottom: 1.2rem; }
+.byline { font-size: 0.82rem; color: var(--muted); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 0.6rem 0; margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+.numero-tag { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; margin: -1.2rem 0 1.8rem; }
+.numero-tag a { color: var(--accent); text-decoration: none; font-weight: 600; border-bottom: 1px solid #f0d6d6; }
+.numero-tag a:hover { border-bottom-color: var(--accent); }
+.numero-tag.attesa { color: #8a7f6d; }
+.update-link { display: block; font-size: 0.85rem; background: #f4f1ea; border-left: 3px solid var(--accent); padding: 0.7rem 1rem; margin: 1.5rem 0; }
+.update-link a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.update-link a:hover { text-decoration: underline; }
+.body { font-size: 1.06rem; }
+.body p, .body li {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.body p { margin-bottom: 1.2rem; max-width: 68ch; }
+.body > p:first-of-type::first-letter {
+  font-family: var(--serif);
+  font-size: 3.6em;
+  font-weight: 700;
+  float: left;
+  line-height: 0.85;
+  padding: 0.06em 0.12em 0 0;
+  color: var(--accent);
+}
+.body h2 { font-family: var(--serif); font-size: 1.45rem; font-weight: 600; margin: 2.2rem 0 0.9rem; }
+.body h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; margin: 1.8rem 0 0.7rem; }
+.body blockquote {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--ink);
+  border: none;
+  border-top: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding: 1.4rem 0.5rem;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+.body blockquote p { max-width: none; margin: 0; text-align: center; hyphens: none; }
+.body a { color: var(--accent); }
+.body ul, .body ol { margin: 0 0 1.2rem 1.5rem; }
+.body hr { border: none; text-align: center; margin: 2.5rem 0; }
+.body hr::after { content: "· · ·"; color: var(--muted); letter-spacing: 0.6em; }
+.colophon { max-width: 680px; margin: 3rem auto 2rem; padding: 1.5rem; border-top: 3px double var(--rule); font-size: 0.78rem; color: var(--muted); }
+.colophon .sources { margin-top: 0.8rem; }
+.colophon .sources li { margin-bottom: 0.25rem; word-break: break-all; }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="inner">
+    <a class="brand" href="../../index.html">Pubblicio</a>
+    <nav>
+      <a href="../../index.html">Numero in edicola</a>
+      <a href="../../index.html#numeri">Numeri precedenti</a>
+      <a href="../../tutti.html">Archivio articoli</a>
+    </nav>
+  </div>
+</header>
+
+<article class="article">
+  <div class="kicker">Tecnologia</div>
+  <h1>Geotermia di nuova generazione: il caso Fervo‑Google</h1>
+  <p class="standfirst">Il recente accordo tra la startup Fervo e Google segna un passo importante per lo sviluppo di impianti geotermici avanzati. Si analizzano le tecnologie emergenti, le opportunità di investimento e l’impatto ambientale di questa forma di energia rinnovabile.</p>
+  <div class="byline">
+    <span>6 settembre 2026</span>
+    <span>geotermia, energia rinnovabile, tecnologia, investimenti, Google, Fervo Energy, data center, energia pulita</span>
+  </div>
+
+  <!--NUMERO--><div class="numero-tag attesa">Uscirà nel numero di ottobre 2026</div><!--/NUMERO-->
+
+  
+  
+
+  <div class="body">
+    <h2>Un accordo storico per l’energia di base</h2>
+<p>Fervo Energy ha firmato con Google un accordo di fornitura di energia geotermica da <strong>396 megawatt</strong>, il più grande power purchase agreement (PPA) di questo tipo mai stipulato. L’accordo riguarda la produzione del progetto <strong>Cape Station</strong>, situato nella contea di Beaver, nello Utah. Fervo prevede di mettere in funzione la prima fase del sito entro il 2026, con una capacità iniziale di circa 100 megawatt, da espandere a 400‑500 megawatt entro il 2028. Google ha la possibilità di aumentare l’acquisto di ulteriori 600 megawatt entro giugno 2030, portando il volume totale vicino a un gigawatt.</p>
+<p>Il valore delle azioni di Fervo è salito di oltre il 20 % al debutto di borsa dopo l’annuncio, mentre l’azienda sta investendo più di <strong>2 miliardi di dollari</strong> nello sviluppo di Cape Station.</p>
+<h2>Tecnologie emergenti: gli Enhanced Geothermal Systems</h2>
+<p>Il cuore della proposta è la tecnologia degli <strong>Enhanced Geothermal Systems (EGS)</strong>, che sfrutta perforazioni orizzontali e fratturazione idraulica, tecniche tipiche dell’industria petrolifera. Nel 2023 Fervo ha completato un test di 30 giorni in Nevada, trivellando fino a 2.346 metri e raggiungendo temperature di circa 190 °C, dimostrando la fattibilità di una produzione di 3,5 megawatt. Il test ha confermato che un megawatt di capacità geotermica può alimentare circa <strong>750 case</strong>, offrendo una stima concreta del potenziale di scala.</p>
+<p>Per trasformare il calore in elettricità, Fervo ha stretto un accordo con Turboden (parte del gruppo Mitsubishi Heavy Industries) per fornire turbine a ciclo Rankine organico (ORC) da 50 megawatt ciascuna, per un totale di <strong>1,7 gigawatt</strong> di capacità modulare GeoBlock.</p>
+<h2>Google e la corsa al carbon‑free 24/7</h2>
+<p>Google ha fissato l’obiettivo di garantire energia priva di carbonio <strong>24 ore su 24, 7 giorni su 7</strong> ai propri data center entro il 2030, per sostenere la crescente domanda di intelligenza artificiale. Il progetto Cape Station sarà destinato a fornire l’elettricità necessaria a un futuro data center di Google nello Utah. Inoltre, Google ha già investito in Fervo prima della sua IPO, consolidando una partnership che va oltre la semplice fornitura di energia.</p>
+<h2>Opportunità di investimento e sviluppo</h2>
+<p>L’accordo rappresenta una pietra miliare per gli investitori: le azioni di Fervo hanno registrato un balzo significativo dopo la firma del PPA, segnale di fiducia del mercato nella capacità dell’azienda di realizzare progetti su larga scala. Inoltre, la collaborazione con Turboden garantisce una catena di approvvigionamento più solida e tempi di realizzazione ridotti, fattori chiave per attrarre capitali istituzionali.</p>
+<h2>Impatto ambientale e prospettive future</h2>
+<p>L’energia geotermica di nuova generazione fornisce energia continua, <strong>senza emissioni di CO₂</strong>, e richiede meno superficie rispetto a solare ed eolico. Il Dipartimento dell’Energia degli Stati Uniti ha lanciato l’iniziativa <strong>“Enhanced Geothermal Shot”</strong> per ridurre i costi della geotermia migliorata del 90 % entro il 2035. Secondo il DOE, la geotermia avanzata potrebbe fornire fino a <strong>300 000 megawatt</strong> negli USA entro il 2050, aprendo la strada a una rete elettrica più resiliente e a basse emissioni.</p>
+<p>In sintesi, il patto Fervo‑Google non è solo un affare commerciale, ma un segnale di svolta per l’intero settore energetico: una tecnologia nata dall’esperienza del petrolio si trasforma in una delle soluzioni più promettenti per alimentare il futuro digitale in modo sostenibile.</p>
+  </div>
+</article>
+
+<footer class="colophon">
+  <p>Pubblicato il 6 settembre 2026 &middot; Pubblicio</p>
+  
+</footer>
+</body>
+</html>
