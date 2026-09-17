@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La crisi delle RAM: perché la memoria è diventata la risorsa più contesa del pianeta — Pubblicio Wunderbazar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+  --ink: #1a1a1a;
+  --muted: #666;
+  --rule: #e0ddd6;
+  --accent: #b91c1c;
+  --paper: #fafaf7;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.75; }
+.masthead { border-bottom: 3px double var(--rule); padding: 1.2rem 0; }
+.masthead .inner { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: baseline; }
+.brand { font-family: var(--serif); font-weight: 700; font-size: 1.4rem; color: var(--ink); text-decoration: none; }
+.masthead nav a { font-size: 0.8rem; color: var(--muted); text-decoration: none; text-transform: uppercase; letter-spacing: 0.08em; }
+.masthead nav a:hover { color: var(--accent); }
+.article { max-width: 680px; margin: 2.5rem auto; padding: 0 1.5rem; }
+.kicker { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.6rem; }
+h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height: 1.15; letter-spacing: -0.015em; margin-bottom: 0.8rem; }
+.standfirst { font-family: var(--serif); font-size: 1.15rem; font-style: italic; color: #444; line-height: 1.5; margin-bottom: 1.2rem; }
+.byline { font-size: 0.82rem; color: var(--muted); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 0.6rem 0; margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+.numero-tag { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; margin: -1.2rem 0 1.8rem; }
+.numero-tag a { color: var(--accent); text-decoration: none; font-weight: 600; border-bottom: 1px solid #f0d6d6; }
+.numero-tag a:hover { border-bottom-color: var(--accent); }
+.numero-tag.attesa { color: #8a7f6d; }
+.update-link { display: block; font-size: 0.85rem; background: #f4f1ea; border-left: 3px solid var(--accent); padding: 0.7rem 1rem; margin: 1.5rem 0; }
+.update-link a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.update-link a:hover { text-decoration: underline; }
+.body { font-size: 1.06rem; }
+.body p, .body li {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.body p { margin-bottom: 1.2rem; max-width: 68ch; }
+.body > p:first-of-type::first-letter {
+  font-family: var(--serif);
+  font-size: 3.6em;
+  font-weight: 700;
+  float: left;
+  line-height: 0.85;
+  padding: 0.06em 0.12em 0 0;
+  color: var(--accent);
+}
+.body h2 { font-family: var(--serif); font-size: 1.45rem; font-weight: 600; margin: 2.2rem 0 0.9rem; }
+.body h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; margin: 1.8rem 0 0.7rem; }
+.body blockquote {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--ink);
+  border: none;
+  border-top: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding: 1.4rem 0.5rem;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+.body blockquote p { max-width: none; margin: 0; text-align: center; hyphens: none; }
+.body a { color: var(--accent); }
+.body ul, .body ol { margin: 0 0 1.2rem 1.5rem; }
+.body hr { border: none; text-align: center; margin: 2.5rem 0; }
+.body hr::after { content: "· · ·"; color: var(--muted); letter-spacing: 0.6em; }
+.colophon { max-width: 680px; margin: 3rem auto 2rem; padding: 1.5rem; border-top: 3px double var(--rule); font-size: 0.78rem; color: var(--muted); }
+.colophon .sources { margin-top: 0.8rem; }
+.colophon .sources li { margin-bottom: 0.25rem; word-break: break-all; }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="inner">
+    <a class="brand" href="../../index.html">Pubblicio Wunderbazar</a>
+    <nav>
+      <a href="../../index.html">Numero in edicola</a>
+      <a href="../../index.html#numeri">Numeri precedenti</a>
+      <a href="../../tutti.html">Archivio articoli</a>
+    </nav>
+  </div>
+</header>
+
+<article class="article">
+  <div class="kicker">Tecnologia</div>
+  <h1>La crisi delle RAM: perché la memoria è diventata la risorsa più contesa del pianeta</h1>
+  
+  <div class="byline">
+    <span>17 settembre 2026</span>
+    <span>RAM, crisi delle memorie, intelligenza artificiale, semiconduttori, hardware, DRAM, HBM, mercato tecnologico</span>
+  </div>
+
+  <!--NUMERO--><div class="numero-tag attesa">Uscirà nel numero di 16–30 settembre 2026</div><!--/NUMERO-->
+
+  
+  
+
+  <div class="body">
+    <h2>Una scrivania sempre più affollata</h2>
+<p>Per capire cosa sta succedendo al mercato tecnologico globale bisogna partire da un concetto semplice, che spesso diamo per scontato. La RAM, acronimo di Random Access Memory, è la memoria di lavoro dei nostri dispositivi. Se il disco rigido è la biblioteca dove conserviamo tutti i dati, la RAM è la scrivania su cui quei dati vengono consultati, elaborati e trasformati. È estremamente veloce rispetto allo storage tradizionale e fornisce al processore tutto ciò di cui ha bisogno per i propri calcoli. Il termine che si usa colloquialmente è quasi sempre riferito alla DRAM, la Dynamic Random Access Memory, la tipologia più diffusa.</p>
+<p>Negli ultimi anni, però, il panorama si è complicato. Accanto alla RAM tradizionale, quella che troviamo nei PC e negli smartphone, si sono sviluppate tecnologie diverse pensate per esigenze specifiche. C'è la VRAM, la memoria video dedicata alle schede grafiche, e c'è soprattutto la HBM, la High Bandwidth Memory, una memoria impilata ad altissima larghezza di banda utilizzata dagli acceleratori per l'intelligenza artificiale. Poi ci sono le soluzioni di memoria unificata, come quelle adottate da Apple nei chip della serie M, che integrano CPU, GPU e memoria in un unico package per massimizzare le prestazioni. Sono architetture profondamente diverse tra loro, ma condividono lo stesso collo di bottiglia produttivo: i wafer di silicio, la base di materiale semiconduttore su cui vengono incisi i circuiti integrati.</p>
+<h2>Il buco nero dell'intelligenza artificiale</h2>
+<p>La causa scatenante della crisi attuale è chiara e ha un nome preciso: l'intelligenza artificiale generativa. I data center dedicati all'IA stanno letteralmente divorando memoria a un ritmo insostenibile. I grandi modelli linguistici richiedono una larghezza di banda e una densità di memoria straordinarie: un singolo server di IA può richiedere terabyte di RAM di ultima generazione. Le cosiddette AI factory prenotano intere forniture annuali con largo anticipo, spesso bloccando contratti pluriennali che lasciano le briciole agli altri settori.</p>
+<p>Secondo le analisi più recenti, i data center consumano ormai il 70 per cento di tutti i chip di memoria prodotti nel mondo. Fino a pochi anni fa, smartphone e PC erano i principali driver della domanda di DRAM. Oggi la priorità è alimentare GPU e acceleratori che richiedono quantità di memoria enormi per gestire modelli sempre più complessi. Il cuore della crisi ha un nome tecnico: HBM. Nel 2026 questo formato assorbe il 23 per cento di tutti i wafer DRAM prodotti, ma il dato va interpretato, perché produrre un bit di HBM richiede fino a tre volte la capacità produttiva necessaria per un bit di DDR5. In altre parole, ogni wafer destinato all'HBM sottrae risorse in modo sproporzionato alla produzione di memoria consumer. E il motivo è puramente economico: l'HBM rappresenta solo l'8 per cento del volume totale, ma genera il 30 per cento dei ricavi globali DRAM.</p>
+<h2>Un oligopolio sotto pressione</h2>
+<p>Il mercato globale delle memorie è un oligopolio controllato da tre aziende: SK Hynix, Samsung e Micron, che da sole gestiscono circa il 90 per cento di molti ambiti produttivi. Negli anni queste società sono state accusate di concordare i prezzi, danneggiando la concorrenza, ma al tempo stesso hanno garantito una certa stabilità delle vendite nonostante le oscillazioni della domanda tipica della tecnologia di consumo. Oggi quella stabilità è saltata.</p>
+<p>I produttori hanno orientato una parte importante della loro produzione verso il settore delle intelligenze artificiali, che garantisce contratti vantaggiosi sia in termini economici sia di durata degli investimenti. Le linee produttive libere per creare le memorie necessarie a PC, smartphone e dispositivi consumer sono ridotte all'osso. Il risultato è che i prezzi sono letteralmente esplosi. Per moltissime tipologie di DRAM gli aumenti nelle forniture all'ingrosso sono stati tra il 50 e il 60 per cento, mentre a scaffale si parla di rincari tra il 200 e il 300 per cento. Il prezzo di riferimento per un modulo DDR5 da 32GB venduto da Samsung è passato da circa 149 dollari a settembre a circa 239 dollari a novembre 2025, un aumento di oltre il 60 per cento in appena due mesi. Sul fronte consumer, un kit DDR5 da 64GB è passato da circa 150 dollari a oltre 500 dollari nel giro di pochi mesi.</p>
+<h2>Anni, non mesi</h2>
+<p>La domanda che tutti si pongono è quanto durerà questa situazione. La risposta, purtroppo, non è incoraggiante. Non si tratta di un semplice ciclo di domanda e offerta, ma di una trasformazione strutturale che sta riscrivendo le priorità dell'intera industria dei semiconduttori. Secondo le analisi più recenti, i principali produttori riusciranno a soddisfare solo il 60 per cento della domanda globale entro il 2027, nonostante investimenti miliardari in nuove fabbriche e linee produttive.</p>
+<p>Il problema è fisico prima che economico. Costruire e rendere operativa una nuova fabbrica litografica richiede miliardi di dollari e soprattutto anni di lavoro, un limite temporale che nessun ammontare di investimenti può comprimere nel breve periodo. Per soddisfare la domanda globale servirebbe un incremento annuo del 12 per cento tra il 2026 e il 2027, ma attualmente siamo fermi al 7,5 per cento. Il divario è enorme e continua ad allargarsi. Alcuni player del settore prevedono una normalizzazione non prima del 2027-2028.</p>
+<h2>Il conto per i consumatori</h2>
+<p>Nel frattempo, cosa succede sul mercato? L'onda d'urto si sta abbattendo con inesorabile violenza sull'intera filiera dell'elettronica. Il segmento dei personal computer e dei notebook sta subendo l'impatto in pieno volto. Dichiarazioni recenti dei vertici di aziende leader come HP hanno portato alla luce un dato allarmante: nei PC preassemblati e nei portatili commerciali, il costo della memoria RAM è arrivato a pesare per uno sbalorditivo 35 per cento sul costo totale di produzione della macchina.</p>
+<p>Questo squilibrio innesca due scenari paralleli e altrettanto penalizzanti per l'utente. Il primo è l'inevitabile rialzo dei listini: nessun produttore è in grado di assorbire autonomamente un rincaro del 35 per cento su un singolo componente critico senza veder collassare i propri margini. Il secondo scenario è decisamente più insidioso e rappresenta l'applicazione in ambito tech di quella che nel settore alimentare viene definita shrinkflation: modelli base bloccati a 8 GB invece di 16 GB, meno configurazioni economiche, cicli di aggiornamento più lenti.</p>
+<p>Anche il mercato degli smartphone sta risentendo pesantemente della situazione. La carenza di LPDDR4 e LPDDR5 sta rallentando la produzione e aumentando i costi. Samsung è stata costretta a interrompere o ridurre drasticamente la produzione delle memorie meno recenti, come le LPDDR4 e LPDDR4X, spostando ogni risorsa disponibile sulle memorie di nuova generazione. Questa decisione potrebbe portare l'azienda a sacrificare il mercato dei dispositivi economici e di fascia media, per dare priorità ai chip più redditizi richiesti dal settore AI e dai flagship. Secondo IDC, le spedizioni globali di smartphone sono previste in calo di circa il 13 per cento nel 2026, uno shock significativo per un mercato che si stava appena stabilizzando.</p>
+<p>Anche colossi come Apple non sono immuni. I leaker ipotizzano un probabile ritardo nel lancio dei nuovi MacBook, specialmente per le versioni Pro, proprio perché i chip della serie M richiedono memorie unificate ad altissime prestazioni che in questo momento scarseggiano.</p>
+<h2>Come reagiscono i consumatori</h2>
+<p>Di fronte a questo scenario, la reazione dei consumatori è stata in parte prevedibile e in parte sorprendente. I produttori hanno registrato un boom di vendite nel primo trimestre del 2026, con un incremento del 3,2 per cento su base annua, ma si tratta di un fenomeno di frontloading: molti utenti hanno anticipato gli acquisti per paura dei rincari futuri. Il resto dell'anno rischia però un crollo, e i modelli entry-level sotto i 500 euro stanno diventando finanziariamente non sostenibili.</p>
+<p>Sul fronte dei PC assemblati, gli appassionati di videogiochi sono stati i primi ad accorgersi dell'aumento dei prezzi. Alcuni dei kit DRAM più richiesti negli ultimi tre mesi sono passati da 80 a 300 dollari, ma ci sono stati casi di sistemi più avanzati passati da 190 a 700 dollari. I prezzi variano così velocemente che alcuni negozi hanno iniziato a vendere le RAM come si fa con il pescato del giorno, aggiornando di continuo le richieste per i singoli clienti. Alcune catene statunitensi hanno iniziato a togliere i prezzi fissi dagli scaffali, sostituendoli con indicazioni generiche e rimandando al prezzo di mercato del giorno mostrato alla cassa.</p>
+<p>Le aziende, dal canto loro, stanno provando a correre ai ripari. Alcune, come Lenovo, stanno cercando di accumulare memorie e altri componenti in modo da ridurre gli aumenti dei prezzi e non scaricare il problema completamente sui loro clienti. Altre società ridurranno la capacità della RAM nei loro dispositivi. Dell ha avvertito che nel 2026 gli aumenti potrebbero arrivare al 30 per cento, mentre Asus è stata la prima ad annunciare ufficialmente che avrebbe ritoccato i prezzi e modificato le opzioni di configurazione dei prodotti esistenti.</p>
+<p>Il direttore operativo di Dell, Jeff Clarke, ha descritto la situazione con parole pesanti, definendola la peggiore carenza che abbia mai visto in tanti anni di lavoro nel settore, con una domanda di gran lunga superiore all'offerta.</p>
+<h2>Verso una nuova normalità</h2>
+<p>La crisi della RAM del 2026 è, nella sua essenza, un segnale strutturale: la memoria non è più una commodity a basso costo, ma una risorsa strategica contesa tra l'economia dell'intelligenza artificiale e quella dei dispositivi di consumo. Non esiste un firewall tra questi due mondi: quando la capacità del silicio si sposta verso l'HBM premium, anche la memoria mobile a basso consumo si contrae.</p>
+<p>Per i consumatori, questo significa probabilmente dover accettare che l'era dei dispositivi a prezzi ultrabassi, costruita sull'assunto di costi dei componenti in perpetua discesa, è di fatto terminata. Le strategie di prodotto che assumevano un'inflazione continua delle specifiche a prezzi stabili devono essere riviste, e le scelte difficili tra margine, prezzo e capacità riguarderanno sempre più anche le fasce medie del mercato.</p>
+<p>La domanda che resta aperta è se e quando la bolla dell'IA rallenterà abbastanza da restituire ossigeno al mercato consumer. Alcuni piccoli produttori, con pragmatismo, ammettono di aspettare proprio questo. Ma nessuno dei grandi attori sembra scommettere su un'inversione di rotta a breve. E nel frattempo, la memoria che tutti diamo per scontata continua a essere la risorsa più contesa dell'economia digitale.</p>
+  </div>
+</article>
+
+<footer class="colophon">
+  <p>Pubblicato il 17 settembre 2026 &middot; Pubblicio Wunderbazar</p>
+  
+</footer>
+</body>
+</html>
