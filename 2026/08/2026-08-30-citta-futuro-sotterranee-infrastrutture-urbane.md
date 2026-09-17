@@ -1,6 +1,6 @@
 ---
 title: "Sotto i nostri piedi: le città del futuro affondano nel sottosuolo"
-date: 2026-08-30T17:06:43.511597
+date: 2026-08-25T10:32:21
 slug: citta-futuro-sotterranee-infrastrutture-urbane
 category: "Tecnologia"
 topic_id: 25
