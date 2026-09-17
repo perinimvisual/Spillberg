@@ -1,6 +1,6 @@
 ---
 title: "Il potere invisibile dell’ambiente: come luce, suono e spazio plasmano il nostro benessere in bar, ristoranti, hotel e uffici"
-date: 2026-09-01T19:40:54.501067
+date: 2026-08-31T15:19:55
 slug: potere-ambiente-benessere-spazi
 category: "Società"
 topic_id: 33
