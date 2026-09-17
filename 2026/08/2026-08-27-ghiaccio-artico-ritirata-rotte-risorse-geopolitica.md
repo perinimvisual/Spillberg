@@ -1,6 +1,6 @@
 ---
 title: "Il ghiaccio artico in ritirata: rotte marittime, risorse strategiche e la nuova frontiera geopolitica"
-date: 2026-08-27T17:06:43.509412
+date: 2026-08-25T10:31:20
 slug: ghiaccio-artico-ritirata-rotte-risorse-geopolitica
 category: "Ambiente"
 topic_id: 22
