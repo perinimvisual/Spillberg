@@ -1,6 +1,6 @@
 ---
 title: "Acqua, l’oro blu del XXI secolo: desalinizzazione, falde sotterranee e le nuove tensioni geopolitiche"
-date: 2026-08-31T19:03:36.726444
+date: 2026-08-25T10:33:30
 slug: acqua-oro-blu-xxi-secolo
 category: "Ambiente"
 topic_id: 28
