@@ -1,9 +1,10 @@
 ---
 title: "La vita segreta degli oggetti nelle camere d’hotel: design, costi e abitudini dei clienti"
-date: 2026-09-02T23:06:51.761658
+date: 2026-08-01T15:22:36
 slug: vita-segreta-oggetti-camere-hotel
 category: "Società"
 topic_id: 38
+edizione: "2026-08-a"
 ---
 
 # La vita segreta degli oggetti nelle camere d’hotel: design, costi e abitudini dei clienti
