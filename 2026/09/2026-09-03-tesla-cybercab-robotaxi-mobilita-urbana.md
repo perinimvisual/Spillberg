@@ -1,9 +1,9 @@
 ---
 title: "Tesla Cybercab: il robotaxi che vuole rivoluzionare la mobilità urbana"
-date: 2026-09-03T09:32:29
+date: 2026-09-15T09:32:29
 slug: tesla-cybercab-robotaxi-mobilita-urbana
 category: "Tecnologia"
-edizione: "2026-09-b"
+edizione: "2026-09-a"
 topic_id: 45
 ---
 
