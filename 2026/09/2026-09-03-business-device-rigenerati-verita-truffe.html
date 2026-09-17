@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Il business dei device rigenerati: verità e truffe — Pubblicio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+  --ink: #1a1a1a;
+  --muted: #666;
+  --rule: #e0ddd6;
+  --accent: #b91c1c;
+  --paper: #fafaf7;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.75; }
+.masthead { border-bottom: 3px double var(--rule); padding: 1.2rem 0; }
+.masthead .inner { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: baseline; }
+.brand { font-family: var(--serif); font-weight: 700; font-size: 1.4rem; color: var(--ink); text-decoration: none; }
+.masthead nav a { font-size: 0.8rem; color: var(--muted); text-decoration: none; text-transform: uppercase; letter-spacing: 0.08em; }
+.masthead nav a:hover { color: var(--accent); }
+.article { max-width: 680px; margin: 2.5rem auto; padding: 0 1.5rem; }
+.kicker { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.6rem; }
+h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height: 1.15; letter-spacing: -0.015em; margin-bottom: 0.8rem; }
+.standfirst { font-family: var(--serif); font-size: 1.15rem; font-style: italic; color: #444; line-height: 1.5; margin-bottom: 1.2rem; }
+.byline { font-size: 0.82rem; color: var(--muted); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 0.6rem 0; margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+.numero-tag { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; margin: -1.2rem 0 1.8rem; }
+.numero-tag a { color: var(--accent); text-decoration: none; font-weight: 600; border-bottom: 1px solid #f0d6d6; }
+.numero-tag a:hover { border-bottom-color: var(--accent); }
+.numero-tag.attesa { color: #8a7f6d; }
+.update-link { display: block; font-size: 0.85rem; background: #f4f1ea; border-left: 3px solid var(--accent); padding: 0.7rem 1rem; margin: 1.5rem 0; }
+.update-link a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.update-link a:hover { text-decoration: underline; }
+.body { font-size: 1.06rem; }
+.body p, .body li {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.body p { margin-bottom: 1.2rem; max-width: 68ch; }
+.body > p:first-of-type::first-letter {
+  font-family: var(--serif);
+  font-size: 3.6em;
+  font-weight: 700;
+  float: left;
+  line-height: 0.85;
+  padding: 0.06em 0.12em 0 0;
+  color: var(--accent);
+}
+.body h2 { font-family: var(--serif); font-size: 1.45rem; font-weight: 600; margin: 2.2rem 0 0.9rem; }
+.body h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; margin: 1.8rem 0 0.7rem; }
+.body blockquote {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--ink);
+  border: none;
+  border-top: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding: 1.4rem 0.5rem;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+.body blockquote p { max-width: none; margin: 0; text-align: center; hyphens: none; }
+.body a { color: var(--accent); }
+.body ul, .body ol { margin: 0 0 1.2rem 1.5rem; }
+.body hr { border: none; text-align: center; margin: 2.5rem 0; }
+.body hr::after { content: "· · ·"; color: var(--muted); letter-spacing: 0.6em; }
+.colophon { max-width: 680px; margin: 3rem auto 2rem; padding: 1.5rem; border-top: 3px double var(--rule); font-size: 0.78rem; color: var(--muted); }
+.colophon .sources { margin-top: 0.8rem; }
+.colophon .sources li { margin-bottom: 0.25rem; word-break: break-all; }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="inner">
+    <a class="brand" href="../../index.html">Pubblicio</a>
+    <nav>
+      <a href="../../index.html">Numero in edicola</a>
+      <a href="../../index.html#numeri">Numeri precedenti</a>
+      <a href="../../tutti.html">Archivio articoli</a>
+    </nav>
+  </div>
+</header>
+
+<article class="article">
+  <div class="kicker">Economia</div>
+  <h1>Il business dei device rigenerati: verità e truffe</h1>
+  <p class="standfirst">Il mercato dei dispositivi elettronici rigenerati sta crescendo, ma emergono dubbi sulla reale rigenerazione dei prodotti. Si indaga la catena di valore, le certificazioni di qualità e le implicazioni per i consumatori e l’ambiente.</p>
+  <div class="byline">
+    <span>16 settembre 2026</span>
+    <span>economia, consumo, sostenibilità, elettronica, ricondizionamento, normativa</span>
+  </div>
+
+  <!--NUMERO--><div class="numero-tag attesa">Uscirà nel numero di 16–30 settembre 2026</div><!--/NUMERO-->
+
+  
+  
+
+  <div class="body">
+    <h2>Il mercato dei device rigondizionati in forte espansione</h2>
+<p>Il mercato dei dispositivi ricondizionati sta crescendo rapidamente in tutta Europa, grazie alla crescente attenzione verso la sostenibilità e l’economia circolare. Consumatori e imprese lo vedono come una risposta concreta all’obsolescenza programmata dei prodotti hi‑tech.</p>
+<h2>Il quadro normativo europeo</h2>
+<p>La normativa dell’Unione europea impone trasparenza, sicurezza e diritti al compratore di un prodotto rigenerato. In particolare, la <strong>direttiva RAEE</strong> obbliga produttori e rivenditori a gestire correttamente i dispositivi a fine vita, promuovendo la raccolta e il riciclo.</p>
+<p>Parallelamente, la <strong>direttiva sui diritti dei consumatori (2019/771)</strong> estende la garanzia minima a due anni anche ai dispositivi ricondizionati, obbligando il venditore a offrire riparazione, sostituzione o rimborso in caso di difetto.</p>
+<p>I rivenditori devono indicare il grado di usura, le riparazioni effettuate e fornire certificazioni di conformità come il marchio CE o RoHS.</p>
+<h2>Un’opportunità per il settore telco</h2>
+<p>Nel segmento delle telecomunicazioni, il refurbishing è considerato una leva fondamentale per la transizione verso un modello più sostenibile e competitivo. La possibilità di riutilizzare smartphone e apparati di rete consente di contenere i costi di investimento e di ridurre l’impatto ambientale associato alla produzione di nuovi device.</p>
+<h2>Differenze tra "rigenerato" e "ricondizionato"</h2>
+<p>La giurisprudenza italiana ha precisato che il prodotto <strong>rigenerato</strong> deve essere riportato allo stato di origine con ricambi originali per essere considerato lecitamente commerciabile. Il termine "rigenerato" indica dunque un bene riportato a condizioni di fabbrica, mentre "ricondizionato" può presentare segni di usura estetica.</p>
+<p>Molti retailer adottano un sistema di <strong>grading</strong> da A a C; il grado A corrisponde a condizioni estetiche molto buone e a funzionalità pari al nuovo, il grado B presenta usura evidente ma nessun difetto operativo, il grado C evidenzia usura marcata.</p>
+<h2>I grandi player e le garanzie offerte</h2>
+<p>Catene come MediaWorld, Amazon Renewed, Back Market e altri grandi player offrono una garanzia legale di 24 mesi sui prodotti ricondizionati, allo stesso livello di quella prevista per i nuovi.</p>
+<h2>Quanto si risparmia davvero?</h2>
+<p>I dati di settore mostrano che i consumatori possono risparmiare dal 30 al 50 per cento rispetto al prezzo di listino acquistando un dispositivo ricondizionato. Un confronto specifico evidenzia un risparmio medio per gli smartphone compreso tra il 35% e il 58%.</p>
+<h2>Impatto ambientale</h2>
+<p>Secondo le stime di Federconsumatori, l’impatto ambientale di uno smartphone nuovo è di circa <strong>17,2 kg di CO₂ annui</strong>, contro <strong>8,2 kg</strong> per lo stesso modello rigenerato. Il risparmio di emissioni è una delle motivazioni più citate per scegliere il ricondizionato.</p>
+<h2>Truffe e criticità emerse sul campo</h2>
+<p>L’Unione Nazionale Consumatori segnala che molti venditori non specificano chi ha effettuato il ricondizionamento, né i componenti utilizzati, creando un serio rischio di inganno. Inoltre, alcuni siti inseriscono clausole vessatorie che limitano il foro competente o escludono la responsabilità per danni durante il trasporto.</p>
+<h2>Come acquistare in sicurezza</h2>
+<p>Per minimizzare i rischi, è consigliabile:
+- Verificare la certificazione CE e la presenza del logo di ricondizionamento;
+- Controllare il <strong>grading</strong> indicato (A, B o C) e leggere con attenzione la descrizione dello stato estetico;
+- Accertarsi che la garanzia offerta sia di almeno 24 mesi e che la politica di reso sia chiara.</p>
+<h2>Conclusioni</h2>
+<p>Il business dei device rigenerati rappresenta una concreta occasione di risparmio economico e di riduzione dell’impatto ambientale, ma solo se accompagnato da una normativa rigorosa e da pratiche trasparenti. Consumatori informati e venditori certificati sono gli alleati indispensabili per trasformare la promessa della circular economy in una realtà priva di truffe.</p>
+  </div>
+</article>
+
+<footer class="colophon">
+  <p>Pubblicato il 16 settembre 2026 &middot; Pubblicio</p>
+  
+</footer>
+</body>
+</html>
