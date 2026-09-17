@@ -1,9 +1,10 @@
 ---
 title: "La guerra dei chip: il nuovo campo di battaglia della geopolitica mondiale"
-date: 2026-08-25T10:30:38
+date: 2026-08-01T10:30:38
 slug: guerra-dei-chip-geopolitica
 category: "Politica"
 topic_id: 20
+edizione: "2026-08-a"
 ---
 
 # La guerra dei chip: il nuovo campo di battaglia della geopolitica mondiale
