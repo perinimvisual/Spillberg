@@ -36,6 +36,12 @@ h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height
 .update-link a { color: var(--accent); text-decoration: none; font-weight: 600; }
 .update-link a:hover { text-decoration: underline; }
 .body { font-size: 1.06rem; }
+.body p, .body li {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
 .body p { margin-bottom: 1.2rem; max-width: 68ch; }
 .body > p:first-of-type::first-letter {
   font-family: var(--serif);
@@ -61,7 +67,7 @@ h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height
   margin: 2.5rem 0;
   text-align: center;
 }
-.body blockquote p { max-width: none; margin: 0; }
+.body blockquote p { max-width: none; margin: 0; text-align: center; hyphens: none; }
 .body a { color: var(--accent); }
 .body ul, .body ol { margin: 0 0 1.2rem 1.5rem; }
 .body hr { border: none; text-align: center; margin: 2.5rem 0; }
@@ -88,7 +94,7 @@ h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height
   <h1>De‑estinzione: tra speranze scientifiche e dilemmi etici il ritorno dei giganti scomparsi</h1>
   <p class="standfirst">Grazie alla genetica avanzata, specie come il mammut o la tigre della Tasmania potrebbero tornare in vita. L&#39;articolo discuterà delle possibilità scientifiche, dei rischi ecologici e dei dilemmi morali legati alla resurrezione di specie estinte.</p>
   <div class="byline">
-    <span>31 agosto 2026</span>
+    <span>25 agosto 2026</span>
     <span>de-estinzione, genetica, biodiversità, etica, ecologia, tecnologia, conservazione</span>
   </div>
 
@@ -153,7 +159,7 @@ h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height
 </article>
 
 <footer class="colophon">
-  <p>Pubblicato il 31 agosto 2026 &middot; Pubblicio</p>
+  <p>Pubblicato il 25 agosto 2026 &middot; Pubblicio</p>
   
 </footer>
 </body>
