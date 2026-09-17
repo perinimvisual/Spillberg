@@ -1,6 +1,6 @@
 ---
 title: "Istruzione finanziaria in Italia: un’anatomia dell’incompetenza che parte dalla scuola"
-date: 2026-09-03T09:55:08.895148
+date: 2026-09-01T17:39:21
 slug: istruzione-finanziaria-italia-anatomia-incompetenza-scuola
 category: "Economia"
 topic_id: 42
