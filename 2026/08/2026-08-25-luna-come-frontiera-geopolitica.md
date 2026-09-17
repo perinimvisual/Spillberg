@@ -1,9 +1,10 @@
 ---
 title: "La Luna, nuova frontiera geopolitica: la corsa allo spazio tra USA, Cina, Europa e altri attori"
-date: 2026-08-25T13:50:14.381573
+date: 2026-07-31T11:36:30
 slug: luna-come-frontiera-geopolitica
 category: "Estero"
 topic_id: 15
+edizione: "2026-07-b"
 ---
 
 # La Luna, nuova frontiera geopolitica: la corsa allo spazio tra USA, Cina, Europa e altri attori
