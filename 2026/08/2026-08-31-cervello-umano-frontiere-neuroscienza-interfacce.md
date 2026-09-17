@@ -1,6 +1,6 @@
 ---
 title: "Cervello umano: frontiere della neuroscienza e le nuove interfacce cervello‑computer"
-date: 2026-08-31T19:00:47.895062
+date: 2026-08-25T10:33:11
 slug: cervello-umano-frontiere-neuroscienza-interfacce
 category: "Società"
 topic_id: 27
