@@ -1,9 +1,10 @@
 ---
 title: "Design persuasivo: come le città modellano i comportamenti senza imposizioni"
-date: 2026-09-02T23:57:53.299517
+date: 2026-08-01T15:23:00
 slug: design-persuasivo-citta-modellano-comportamenti
 category: "Società"
 topic_id: 39
+edizione: "2026-08-a"
 ---
 
 # Design persuasivo: come le città modellano i comportamenti senza imposizioni
