@@ -1,6 +1,6 @@
 ---
 title: "Amazon lancia la sfida a Starlink con una costellazione di oltre 5.000 satelliti LEO"
-date: 2026-07-31T11:50:30.886780
+date: 2026-07-29T12:28:09
 slug: amazon-starlink-sfida-satelliti
 category: "Tecnologia"
 topic_id: 7
