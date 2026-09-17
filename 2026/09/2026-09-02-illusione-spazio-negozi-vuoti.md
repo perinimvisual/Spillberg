@@ -1,9 +1,10 @@
 ---
 title: "Il trucco dell’illusione di spazio: perché i negozi sembrano vuoti anche quando non lo sono"
-date: 2026-09-02T18:01:33.863115
+date: 2026-08-01T15:22:10
 slug: illusione-spazio-negozi-vuoti
 category: "Economia"
 topic_id: 37
+edizione: "2026-08-a"
 ---
 
 # Il trucco dell’illusione di spazio: perché i negozi sembrano vuoti anche quando non lo sono
