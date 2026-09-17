@@ -1,9 +1,10 @@
 ---
 title: "Le piccole abitudini in via di estinzione: cosa perdiamo quando spariscono le telefonate spontanee, i contanti e i biglietti cartacei"
-date: 2026-09-01T09:48:53.447102
+date: 2026-09-01T15:24:19
 slug: le-piccole-abitudini-in-via-di-estinzione
 category: "Cultura"
 topic_id: 41
+edizione: "2026-09-a"
 ---
 
 # Le piccole abitudini in via di estinzione: cosa perdiamo quando spariscono le telefonate spontanee, i contanti e i biglietti cartacei
