@@ -1,9 +1,10 @@
 ---
 title: "Il Data Privacy Framework tra la Corte Suprema americana e l’Unione europea: un equilibrio precario"
-date: 2026-08-16T13:34:51.151114
+date: 2026-07-31T11:35:33
 slug: dibattito-stabilita-data-privacy-framework-usa
 category: "Tecnologia"
 topic_id: 13
+edizione: "2026-07-b"
 ---
 
 # Il Data Privacy Framework tra la Corte Suprema americana e l’Unione europea: un equilibrio precario
