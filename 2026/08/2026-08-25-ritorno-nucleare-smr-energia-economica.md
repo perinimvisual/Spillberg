@@ -1,9 +1,10 @@
 ---
 title: "Nucleare di ritorno: i piccoli reattori modulari tra speranza economica e sfide ambientali"
-date: 2026-08-25T14:02:50.224055
+date: 2026-07-31T10:30:17
 slug: ritorno-nucleare-smr-energia-economica
 category: "Economia"
 topic_id: 19
+edizione: "2026-07-b"
 ---
 
 # Nucleare di ritorno: i piccoli reattori modulari tra speranza economica e sfide ambientali
