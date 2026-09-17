@@ -1,6 +1,6 @@
 ---
 title: "Geotermia di nuova generazione: il caso Fervo‑Google"
-date: 2026-09-06T19:28:31.537578
+date: 2026-09-03T09:31:35
 slug: geotermia-nuova-generazione-fervo-google
 category: "Tecnologia"
 edizione: "2026-10"
