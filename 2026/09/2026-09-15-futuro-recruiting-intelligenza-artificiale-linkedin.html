@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Il futuro del recruiting: intelligenza artificiale e LinkedIn — Pubblicio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+  --ink: #1a1a1a;
+  --muted: #666;
+  --rule: #e0ddd6;
+  --accent: #b91c1c;
+  --paper: #fafaf7;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--sans); background: var(--paper); color: var(--ink); line-height: 1.75; }
+.masthead { border-bottom: 3px double var(--rule); padding: 1.2rem 0; }
+.masthead .inner { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: baseline; }
+.brand { font-family: var(--serif); font-weight: 700; font-size: 1.4rem; color: var(--ink); text-decoration: none; }
+.masthead nav a { font-size: 0.8rem; color: var(--muted); text-decoration: none; text-transform: uppercase; letter-spacing: 0.08em; }
+.masthead nav a:hover { color: var(--accent); }
+.article { max-width: 680px; margin: 2.5rem auto; padding: 0 1.5rem; }
+.kicker { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.6rem; }
+h1 { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; line-height: 1.15; letter-spacing: -0.015em; margin-bottom: 0.8rem; }
+.standfirst { font-family: var(--serif); font-size: 1.15rem; font-style: italic; color: #444; line-height: 1.5; margin-bottom: 1.2rem; }
+.byline { font-size: 0.82rem; color: var(--muted); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 0.6rem 0; margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+.numero-tag { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; margin: -1.2rem 0 1.8rem; }
+.numero-tag a { color: var(--accent); text-decoration: none; font-weight: 600; border-bottom: 1px solid #f0d6d6; }
+.numero-tag a:hover { border-bottom-color: var(--accent); }
+.numero-tag.attesa { color: #8a7f6d; }
+.update-link { display: block; font-size: 0.85rem; background: #f4f1ea; border-left: 3px solid var(--accent); padding: 0.7rem 1rem; margin: 1.5rem 0; }
+.update-link a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.update-link a:hover { text-decoration: underline; }
+.body { font-size: 1.06rem; }
+.body p, .body li {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.body p { margin-bottom: 1.2rem; max-width: 68ch; }
+.body > p:first-of-type::first-letter {
+  font-family: var(--serif);
+  font-size: 3.6em;
+  font-weight: 700;
+  float: left;
+  line-height: 0.85;
+  padding: 0.06em 0.12em 0 0;
+  color: var(--accent);
+}
+.body h2 { font-family: var(--serif); font-size: 1.45rem; font-weight: 600; margin: 2.2rem 0 0.9rem; }
+.body h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; margin: 1.8rem 0 0.7rem; }
+.body blockquote {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--ink);
+  border: none;
+  border-top: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding: 1.4rem 0.5rem;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+.body blockquote p { max-width: none; margin: 0; text-align: center; hyphens: none; }
+.body a { color: var(--accent); }
+.body ul, .body ol { margin: 0 0 1.2rem 1.5rem; }
+.body hr { border: none; text-align: center; margin: 2.5rem 0; }
+.body hr::after { content: "· · ·"; color: var(--muted); letter-spacing: 0.6em; }
+.colophon { max-width: 680px; margin: 3rem auto 2rem; padding: 1.5rem; border-top: 3px double var(--rule); font-size: 0.78rem; color: var(--muted); }
+.colophon .sources { margin-top: 0.8rem; }
+.colophon .sources li { margin-bottom: 0.25rem; word-break: break-all; }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="inner">
+    <a class="brand" href="../../index.html">Pubblicio</a>
+    <nav>
+      <a href="../../index.html">Numero in edicola</a>
+      <a href="../../index.html#numeri">Numeri precedenti</a>
+      <a href="../../tutti.html">Archivio articoli</a>
+    </nav>
+  </div>
+</header>
+
+<article class="article">
+  <div class="kicker">Tecnologia</div>
+  <h1>Il futuro del recruiting: intelligenza artificiale e LinkedIn</h1>
+  <p class="standfirst">Esplorazione delle nuove funzionalità AI di LinkedIn per la selezione del personale, i vantaggi per le aziende e le preoccupazioni etiche legate all&#39;automazione.</p>
+  <div class="byline">
+    <span>15 settembre 2026</span>
+    <span>recruiting, intelligenza artificiale, LinkedIn, HR tech, etica, lavoro</span>
+  </div>
+
+  <!--NUMERO--><div class="numero-tag attesa">Uscirà nel numero di 16–30 settembre 2026</div><!--/NUMERO-->
+
+  
+  
+
+  <div class="body">
+    <h2>Un nuovo alleato per i recruiter</h2>
+<p>LinkedIn ha lanciato in Italia la versione in lingua italiana di <strong>Hiring Assistant</strong>, il primo agente di intelligenza artificiale dedicato ai recruiter. Lo strumento è concepito per affiancare i professionisti delle risorse umane, non per sostituirli. Hiring Assistant è in grado di comprendere i requisiti di una posizione, individuare profili coerenti, analizzare le candidature e suggerire le modalità di contatto con i potenziali candidati. Il motore sfrutta i dati di oltre <strong>1,4 miliardi</strong> di membri presenti sulla rete LinkedIn.</p>
+<h2>Impatti concreti per le aziende</h2>
+<p>Grazie all’assistente, i recruiter esaminano in media <strong>l’81 % di profili in meno</strong> per arrivare a una rosa di candidati qualificati. Il tasso di accettazione delle InMail aumenta del <strong>66 %</strong> rispetto ai metodi tradizionali di sourcing, e per ogni posizione viene risparmiata circa <strong>un’ora e mezza</strong> di lavoro nella fase di ricerca dei candidati più idonei. Le aziende che hanno adottato Hiring Assistant registrano un incremento dell’<strong>11 % di assunzioni di qualità</strong> e del <strong>18 % di talenti altamente ricercati</strong>.</p>
+<h2>Un mercato in evoluzione</h2>
+<p>A livello globale, dal <strong>2022</strong> il numero di candidature per ogni offerta è raddoppiato. Il <strong>66 %</strong> dei recruiter a livello mondiale afferma che trovare talenti qualificati è diventato più difficile, mentre in Italia il <strong>52 %</strong> riporta la stessa difficoltà. Inoltre, in Italia il <strong>63 %</strong> dei professionisti delle risorse umane si sente impreparato a gestire le crescenti aspettative delle organizzazioni.</p>
+<h2>L’AI come fattore di trasformazione</h2>
+<p>Secondo una ricerca di LinkedIn, il <strong>73 %</strong> dei recruiter intervistati ritiene che l’intelligenza artificiale sarà il fattore principale di trasformazione del settore del recruiting nei prossimi anni. Il <strong>45 %</strong> prevede un aumento dell’uso dell’AI e dell’automazione nei processi di selezione nei prossimi tre‑cinque anni, e il numero di recruiter che hanno aggiunto competenze legate all’AI ai propri profili è cresciuto del <strong>14 %</strong> nell’ultimo anno.</p>
+<h2>Percezioni positive e aspettative</h2>
+<p>Il <strong>62 %</strong> dei professionisti del recruiting è ottimista sull’impatto positivo dell’AI sul proprio lavoro. Tra i benefici più citati: la possibilità di <strong>velocizzare la redazione degli annunci di lavoro</strong> (confermata dal <strong>56 %</strong> dei partecipanti al sondaggio), di <strong>automatizzare i task ripetitivi</strong> (riferito dal <strong>45 %</strong>) e di <strong>migliorare la relazione con i candidati</strong>, eliminando barriere comunicative (segnalato dal <strong>24 %</strong>).</p>
+<h2>Messaggistica assistita dall’AI</h2>
+<p>La messaggistica assistita dall’AI, introdotta da LinkedIn a maggio 2023, ha incrementato del <strong>40 %</strong> il tasso di accettazione delle InMail e ne ha ridotto i tempi di risposta del <strong>10 %</strong>. Le funzionalità AI sono ora disponibili in italiano, spagnolo, francese, tedesco e portoghese, con l’obiettivo di estenderle a tutte le lingue supportate da Recruiter entro l’anno prossimo.</p>
+<h2>Questioni etiche e normative</h2>
+<p>Hiring Assistant è stato sviluppato nel rispetto del <strong>GDPR</strong> e dell’<strong>AI Act</strong> europeo, con controlli periodici per mitigare bias e garantire trasparenza. Il sistema non può escludere autonomamente candidati né prendere decisioni di assunzione; la responsabilità finale resta nelle mani del recruiter. Questa separazione è fondamentale per tutelare i diritti dei candidati e mantenere la dimensione umana del processo decisionale.</p>
+<h2>Verso un recruiting ibrido</h2>
+<p>L’arrivo dell’assistente AI segna l’inizio di un modello di recruiting ibrido, dove le attività operative – ricerca, screening preliminare, preparazione dei messaggi – vengono automatizzate, mentre la valutazione finale, il dialogo con i candidati e la definizione della strategia di talent acquisition rimangono prerogativa umana. In un mercato del lavoro sempre più complesso, la combinazione di velocità tecnologica e giudizio esperto potrebbe rappresentare la chiave per trovare le persone giuste al momento giusto.</p>
+  </div>
+</article>
+
+<footer class="colophon">
+  <p>Pubblicato il 15 settembre 2026 &middot; Pubblicio</p>
+  
+</footer>
+</body>
+</html>
