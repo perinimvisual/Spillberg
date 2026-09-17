@@ -1,9 +1,10 @@
 ---
 title: "Metalli rari: la corsa globale per litio, cobalto e terre rare"
-date: 2026-08-25T10:31:41
+date: 2026-08-01T10:31:41
 slug: corsa-globale-metalli-rare-litio-cobalto-terre-rare
 category: "Economia"
 topic_id: 23
+edizione: "2026-08-a"
 ---
 
 # Metalli rari: la corsa globale per litio, cobalto e terre rare
