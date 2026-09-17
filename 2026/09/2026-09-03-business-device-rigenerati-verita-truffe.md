@@ -1,9 +1,9 @@
 ---
 title: "Il business dei device rigenerati: verità e truffe"
-date: 2026-09-16T09:33:17
+date: 2026-09-15T09:33:17
 slug: business-device-rigenerati-verita-truffe
 category: "Economia"
-edizione: "2026-09-b"
+edizione: "2026-09-a"
 topic_id: 46
 ---
 
