@@ -1,6 +1,6 @@
 ---
 title: "DNA, la nuova speranza nel caso Simonetta Cesaroni: indagini a 36 anni dal delitto"
-date: 2026-08-15T13:34:51.185582
+date: 2026-07-31T09:59:21
 slug: dna-nuova-speranza-caso-simonetta-cesaroni
 category: "Società"
 topic_id: 12
