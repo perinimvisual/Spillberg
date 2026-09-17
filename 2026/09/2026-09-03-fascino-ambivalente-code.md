@@ -1,9 +1,10 @@
 ---
 title: "Il fascino ambivalente delle code: perché attendiamo e quando l’attesa diventa tormento"
-date: 2026-09-03T00:17:47.361832
+date: 2026-08-01T15:23:51
 slug: fascino-ambivalente-code
 category: "Società"
 topic_id: 40
+edizione: "2026-08-a"
 ---
 
 # Il fascino ambivalente delle code: perché attendiamo e quando l’attesa diventa tormento
