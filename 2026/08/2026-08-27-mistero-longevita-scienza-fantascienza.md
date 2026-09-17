@@ -1,9 +1,10 @@
 ---
 title: "Il mistero della longevità: tra scienza seria e fantascienza"
-date: 2026-08-25T10:30:56
+date: 2026-08-01T10:30:56
 slug: mistero-longevita-scienza-fantascienza
 category: "Società"
 topic_id: 21
+edizione: "2026-08-a"
 ---
 
 # Il mistero della longevità: tra scienza seria e fantascienza
